@@ -1,6 +1,14 @@
 html, body, p, h1 {
   margin: 0;
   padding: 0;
+  background-color: $light-background;
+  font-family: sans-serif;
+}
+
+p {
+  font-family: "ProximaNova";
+  font-weight: 500;
+  padding-bottom: 10px;
 }
 
 .clearfix{

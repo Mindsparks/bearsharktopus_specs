@@ -1,0 +1,11 @@
+.dropdown {
+  background-color: $gray-0;
+  width: 200px;
+  height: 33px;
+  .option {
+    font-family: "ProximaNova";
+    font-weight: 500;
+    padding-left: 10px;
+    line-height: 33px;
+  }
+}
