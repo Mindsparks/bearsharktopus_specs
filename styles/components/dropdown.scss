@@ -7,5 +7,36 @@
     font-weight: 500;
     padding-left: 10px;
     line-height: 33px;
+    .right {
+      padding-right: 10px;
+      float: right;
+    }
+  }
+  .values {
+    background-color: white;
+    border: 2px solid $gray-0;
+    width: 100%;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        color: $gray-3;
+        font-family: "ProximaNova";
+        padding: 10px;
+        width: 100%;
+        text-align: middle;
+        list-style: none;
+        &:hover {
+          color: $gray-5;
+          background-color: $gray-0;
+        }
+      }
+    }
+    display: none;
+  }
+  &:hover {
+    .values {
+      display: block;
+    }
   }
 }

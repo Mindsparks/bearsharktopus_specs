@@ -1,0 +1,19 @@
+.formfield {
+ height: 31px;
+ width: 200px;
+ background-color: #FFF;
+ border: 2px solid #ECECEC;
+ color: $gray-5;
+ padding: 7px;
+ font-family: "ProximaNova";
+ font-weight: 400;
+ text-transform: uppercase;
+ color: #535353;
+ font-size: 14px;
+ letter-spacing: .3px;
+ &:focus {
+   border: 2px solid $gold;
+   -webkit-appearance: none;
+   outline: none;
+ }
+}

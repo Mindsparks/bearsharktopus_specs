@@ -1,0 +1,50 @@
+.toggle-on {
+ height: 16px;
+ width: 30px;
+ border-radius: 16px;
+ background-color: #52A0DE;
+ margin-bottom: 10px;
+ .thumb {
+   height: 12px;
+   width: 16px;
+   border-radius: 12px;
+   background-color: white;
+   position: relative;
+   top: 2px;
+   left: 2px;
+   transition: left .2s ease;
+ }
+ &:hover {
+   background-color: $gray-2;
+   opacity: .4;
+   .thumb {
+     left: 11px;
+   }
+ }
+}
+
+.toggle-off {
+  height: 16px;
+  width: 30px;
+  border-radius: 16px;
+  background-color: $gray-2;
+  opacity: .4;
+  margin-bottom: 10px;
+  .thumb {
+    height: 12px;
+    width: 16px;
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+    top: 2px;
+    left: 11px;
+    transition: left .2s ease;
+  }
+  &:hover {
+    background-color: #52A0DE;
+    opacity: 1;
+    .thumb {
+      left: 2px;
+    }
+  }
+}

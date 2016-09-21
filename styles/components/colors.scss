@@ -1,0 +1,78 @@
+.swatch {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 10px;
+  .hex {
+    font-family: "ProximaNova";
+    font-size: 1rem;
+    color: white;
+    line-height: 40px;
+    padding-left: 10px;
+    font-weight: 700;
+    opacity: .8;
+  }
+  .darken {
+    color: black;
+    opacity: .6;
+  }
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.dark-blue {
+  background-color: $dark-blue;
+}
+
+.light-blue {
+  background-color: $light-blue;
+}
+
+.green {
+  background-color: $green;
+}
+.dark-green {
+  background-color: $dark-green;
+}
+
+.light-green {
+  background-color: $light-green;
+}
+
+.gold {
+  background-color: $gold;
+}
+
+.red {
+  background-color: $red;
+}
+
+.gray-0 {
+  background-color: $gray-0;
+}
+
+.gray-1 {
+  background-color: $gray-1;
+}
+
+.gray-2 {
+  background-color: $gray-2;
+}
+
+.gray-3 {
+  background-color: $gray-3;
+}
+
+.gray-4 {
+  background-color: $gray-4;
+}
+
+.gray-5 {
+  background-color: $gray-5;
+}
+
+.gray-6 {
+  background-color: $gray-6;
+}

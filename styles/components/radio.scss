@@ -4,8 +4,9 @@
   border-radius: 16px;
   background-color: #52A0DE;
   box-shadow: inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 4px white;
-  transition: box-shadow 0.2s ease;
-  transition: background-color 0.2s ease;
+  transition: box-shadow 1s ease;
+  transition: background-color 1s ease;
+  margin-bottom: 10px;
 }
 
 .radio-on:hover {
@@ -17,10 +18,11 @@
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #FFF;
+  background-color: #EDECED;
   box-shadow: inset 0px 0px 0px 2px #D8D8D8, inset 0px 0px 0px 6px white;
-  transition: box-shadow 0.2s ease;
-  transition: background-color 0.2s ease;
+  transition: box-shadow 1s ease;
+  transition: background-color 1s ease;
+  margin-bottom: 10px;
 }
 
 .radio-off:hover {

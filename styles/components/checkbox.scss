@@ -3,6 +3,12 @@
  width: 16px;
  background-color: #52A0DE;
  color: white;
+  margin-bottom: 10px;
+ .check {
+   position: relative;
+   left: 3px;
+   font-size: 13px;
+ }
 }
 
 .checkbox-off {
