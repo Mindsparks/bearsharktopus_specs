@@ -1,3 +1,4 @@
+/* PROXIMA NOVA */
 @font-face {
   font-family: "ProximaNova";
   src: url("../fonts/ProximaNova/ProximaNova-Light.otf");
@@ -26,6 +27,31 @@
   font-family: "ProximaNova";
   src: url("../fonts/ProximaNova/ProximaNova-Black.otf");
   font-weight: 900;
+}
+
+/* GOTHAM */
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaLig");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaBoo");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaMed");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaBol");
+  font-weight: 700;
 }
 
 /* BASE COLORS */
@@ -334,22 +360,8 @@ h1 {
   color: #4D4D4D;
 }
 
-h1.gotham {
-  font-family: Verdana;
-  font-weight: 200;
-  opacity: .6;
-}
-
-h2.gotham {
-  font-family: Verdana;
-}
-
-h3.gotham {
-  font-family: Verdana;
-}
-
-h4.gotham {
-  font-family: Verdana;
+h1.light {
+  color: #EAF2FA;
 }
 
 h2 {
@@ -358,10 +370,18 @@ h2 {
   color: #797979;
 }
 
+h2.light {
+  color: #BECAD5;
+}
+
 h3 {
   font-weight: 500;
   letter-spacing: .1rem;
   color: #7B7B7B;
+}
+
+h3.light {
+  color: #BECAD5;
 }
 
 h4 {
@@ -370,8 +390,42 @@ h4 {
   color: #959595;
 }
 
-p {
+h4.light {
+  color: #BECAD5;
+}
+
+p.proxima-nova {
   font-weight: 400;
+  color: #717171;
+  letter-spacing: .1rem;
+  line-height: 1.2rem;
+}
+
+p.light {
+  color: #BECAD5;
+}
+
+h1.gotham {
+  font-family: "Gotham";
+  opacity: .6;
+}
+
+h2.gotham {
+  font-family: "Gotham";
+}
+
+h3.gotham {
+  font-family: "Gotham";
+}
+
+h4.gotham {
+  font-family: "Gotham";
+}
+
+p.gotham {
+  font-family: "Gotham";
+  line-height: 1.4rem;
+  font-weight: 200;
 }
 
 .toggle-on {
@@ -431,6 +485,244 @@ p {
   left: 2px;
 }
 
+[type=range] {
+  -webkit-appearance: none;
+  margin: 9px 0;
+  width: 100%;
+}
+
+[type=range]:focus {
+  outline: none;
+}
+
+[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  transition: all .2s ease;
+  background: #ECECEC;
+  border: 0px solid #000;
+  border-radius: 5px;
+}
+
+[type=range]::-webkit-slider-thumb {
+  border: 0px solid #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  background: #52A0DE;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.5px;
+}
+
+[type=range]:focus::-webkit-slider-runnable-track {
+  background: #f9f9f9;
+}
+
+[type=range]::-moz-range-track {
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  transition: all .2s ease;
+  background: #ECECEC;
+  border: 0px solid #000;
+  border-radius: 5px;
+}
+
+[type=range]::-moz-range-thumb {
+  border: 0px solid #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  background: #52A0DE;
+  cursor: pointer;
+}
+
+[type=range]::-ms-track {
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  transition: all .2s ease;
+  background: transparent;
+  border-color: transparent;
+  border-width: 18px 0;
+  color: transparent;
+}
+
+[type=range]::-ms-fill-lower {
+  background: #dfdfdf;
+  border: 0px solid #000;
+  border-radius: 10px;
+}
+
+[type=range]::-ms-fill-upper {
+  background: #ECECEC;
+  border: 0px solid #000;
+  border-radius: 10px;
+}
+
+[type=range]::-ms-thumb {
+  border: 0px solid #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  background: #52A0DE;
+  cursor: pointer;
+}
+
+[type=range]:focus::-ms-fill-lower {
+  background: #ECECEC;
+}
+
+[type=range]:focus::-ms-fill-upper {
+  background: #f9f9f9;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/IcoMoon/icomoon.eot?7h3y9d");
+  src: url("../fonts/IcoMoon/icomoon.eot?7h3y9d#iefix") format("embedded-opentype"), url("../fonts/IcoMoon/icomoon.ttf?7h3y9d") format("truetype"), url("../fonts/IcoMoon/icomoon.woff?7h3y9d") format("woff"), url("../fonts/IcoMoon/icomoon.svg?7h3y9d#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin: 20px 0px 50px 20px;
+  display: block;
+  font-size: 2.5rem;
+  color: #4B5054;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-columns {
+  column-count: 4;
+}
+
+.icon-pencil:before {
+  content: "\e90e";
+}
+
+.icon-image:before {
+  content: "\e93b";
+}
+
+.icon-file-upload2:before {
+  content: "\e9a8";
+}
+
+.icon-display:before {
+  content: "\ea73";
+}
+
+.icon-upload:before {
+  content: "\ea88";
+}
+
+.icon-floppy-disk:before {
+  content: "\ea89";
+}
+
+.icon-search3:before {
+  content: "\eb36";
+}
+
+.icon-cogs:before {
+  content: "\eb60";
+}
+
+.icon-stats-bars:before {
+  content: "\eb88";
+}
+
+.icon-meter-fast:before {
+  content: "\ebe2";
+}
+
+.icon-bin:before {
+  content: "\ebfd";
+}
+
+.icon-clipboard2:before {
+  content: "\ec51";
+}
+
+.icon-eye:before {
+  content: "\ecae";
+}
+
+.icon-warning2:before {
+  content: "\ed50";
+}
+
+.icon-plus3:before {
+  content: "\ed5d";
+}
+
+.icon-plus-circle2:before {
+  content: "\ed61";
+}
+
+.icon-cross2:before {
+  content: "\ed6d";
+}
+
+.icon-checkmark:before {
+  content: "\ed6f";
+}
+
+.icon-loop3:before {
+  content: "\edaa";
+}
+
+.icon-arrow-up3:before {
+  content: "\edb9";
+}
+
+.icon-arrow-down3:before {
+  content: "\edc1";
+}
+
+.icon-arrow-up5:before {
+  content: "\edc7";
+}
+
+.icon-arrow-down5:before {
+  content: "\edc9";
+}
+
+.icon-checkbox-partial:before {
+  content: "\ee68";
+}
+
+.header {
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  height: 56px;
+  padding: 12px 0px;
+}
+
+.header .logo {
+  margin-left: 15px;
+  height: 100%;
+  background-size: contain;
+  background-image: url("../images/SnapApp-Logo-2015.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-position: left center;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -464,6 +756,18 @@ p {
   padding: 20px;
   border-radius: 6px;
   box-shadow: 2px 2px 0px 2px #EEE;
+}
+
+.section-dark {
+  background-color: #252B31;
+  margin: 30px 0px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px 2px #666;
+}
+
+.section-dark p {
+  color: #DDD;
 }
 
 .links {

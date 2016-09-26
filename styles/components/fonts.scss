@@ -12,22 +12,8 @@ h1 {
   color: #4D4D4D;
 }
 
-h1.gotham {
-  font-family: Verdana;
-  font-weight: 200;
-  opacity: .6;
-}
-
-h2.gotham {
-  font-family: Verdana;
-}
-
-h3.gotham {
-  font-family: Verdana;
-}
-
-h4.gotham {
-  font-family: Verdana;
+h1.light {
+  color: #EAF2FA;
 }
 
 h2 {
@@ -36,10 +22,18 @@ h2 {
   color: #797979;
 }
 
+h2.light {
+  color: #BECAD5;
+}
+
 h3 {
   font-weight: 500;
   letter-spacing: .1rem;
   color: #7B7B7B;
+}
+
+h3.light {
+  color: #BECAD5;
 }
 
 h4 {
@@ -48,6 +42,40 @@ h4 {
   color: #959595;
 }
 
-p {
+h4.light {
+  color: #BECAD5;
+}
+
+p.proxima-nova {
   font-weight: 400;
+  color: #717171;
+  letter-spacing: .1rem;
+  line-height: 1.2rem;
+}
+
+p.light {
+  color: #BECAD5;
+}
+
+h1.gotham {
+  font-family: "Gotham";
+  opacity: .6;
+}
+
+h2.gotham {
+  font-family: "Gotham";
+}
+
+h3.gotham {
+  font-family: "Gotham";
+}
+
+h4.gotham {
+  font-family: "Gotham";
+}
+
+p.gotham {
+  font-family: "Gotham";
+  line-height: 1.4rem;
+  font-weight: 200;
 }

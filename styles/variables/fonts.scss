@@ -1,3 +1,5 @@
+/* PROXIMA NOVA */
+
 @font-face {
   font-family: "ProximaNova";
   src: url("../fonts/ProximaNova/ProximaNova-Light.otf");
@@ -26,6 +28,32 @@
   font-family: "ProximaNova";
   src: url("../fonts/ProximaNova/ProximaNova-Black.otf");
   font-weight: 900;
+}
+
+/* GOTHAM */
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaLig");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaBoo");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaMed");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothaBol");
+  font-weight: 700;
 }
 
 $helvetica: helvetica, arial, sans-serif;

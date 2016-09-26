@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,.2);
+  height: 56px;
+  padding: 12px 0px;
+  .logo {
+    margin-left: 15px;
+    height: 100%;
+    background-size: contain;
+    background-image: url("../images/SnapApp-Logo-2015.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-position: left center;
+  }
+}
