@@ -18,7 +18,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  margin: 20px 0px 50px 20px;
   display: block;
   font-size: 2.5rem;
   color: #4B5054;
@@ -28,9 +27,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-columns {
-  column-count: 4;
-}
 
 .icon-pencil:before {
   content: "\e90e";
@@ -74,6 +70,9 @@
 .icon-warning2:before {
   content: "\ed50";
 }
+.icon-question4:before {
+  content: "\ed56";
+}
 .icon-plus3:before {
   content: "\ed5d";
 }
@@ -92,14 +91,26 @@
 .icon-arrow-up3:before {
   content: "\edb9";
 }
+.icon-arrow-right3:before {
+  content: "\edbd";
+}
 .icon-arrow-down3:before {
   content: "\edc1";
+}
+.icon-arrow-left3:before {
+  content: "\edc5";
 }
 .icon-arrow-up5:before {
   content: "\edc7";
 }
+.icon-arrow-right5:before {
+  content: "\edc8";
+}
 .icon-arrow-down5:before {
   content: "\edc9";
+}
+.icon-arrow-left5:before {
+  content: "\edca";
 }
 .icon-checkbox-partial:before {
   content: "\ee68";

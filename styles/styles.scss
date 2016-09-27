@@ -6,7 +6,6 @@
 @import "mixins/mixins";
 
 //Components
-@import "components/default";
 @import "components/checkbox";
 @import "components/radio";
 @import "components/dropdown";
@@ -19,6 +18,8 @@
 @import "components/range";
 @import "components/icons";
 @import "components/header";
+@import "components/table";
+@import "components/breadcrumb";
 
 //Pages
 @import "pages/index";

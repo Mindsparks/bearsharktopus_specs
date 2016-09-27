@@ -1,0 +1,18 @@
+.breadcrumb {
+  margin-bottom: 24px;
+  .icon-arrow-left3.small {
+    float: left;
+    font-size: 12px;
+    margin-right: 5px;
+    color: #C1C1C1;
+  }
+  .breadcrumb-text {
+    float: left;
+    font-family: "Gotham";
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #C1C1C1;
+  }
+}

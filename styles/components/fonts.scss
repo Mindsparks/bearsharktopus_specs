@@ -10,6 +10,8 @@ h1 {
   font-weight: 200;
   letter-spacing: .4rem;
   color: #4D4D4D;
+  margin-bottom: 40px;
+  font-size: 1.375rem;
 }
 
 h1.light {
@@ -20,6 +22,7 @@ h2 {
   font-weight: 200;
   letter-spacing: .1rem;
   color: #797979;
+  font-size: 1.125rem;
 }
 
 h2.light {
@@ -30,6 +33,7 @@ h3 {
   font-weight: 500;
   letter-spacing: .1rem;
   color: #7B7B7B;
+  font-size: .875rem;
 }
 
 h3.light {
@@ -40,6 +44,7 @@ h4 {
   font-weight: 400;
   letter-spacing: .1rem;
   color: #959595;
+  font-size: .875rem;
 }
 
 h4.light {
@@ -51,6 +56,7 @@ p.proxima-nova {
   color: #717171;
   letter-spacing: .1rem;
   line-height: 1.2rem;
+  font-size: .8125rem;
 }
 
 p.light {
@@ -60,22 +66,27 @@ p.light {
 h1.gotham {
   font-family: "Gotham";
   opacity: .6;
+  font-size: 1.375rem;
 }
 
 h2.gotham {
   font-family: "Gotham";
+  font-size: 1.125rem;
 }
 
 h3.gotham {
   font-family: "Gotham";
+  font-size: .875rem;
 }
 
 h4.gotham {
   font-family: "Gotham";
+  font-size: .875rem;
 }
 
 p.gotham {
   font-family: "Gotham";
   line-height: 1.4rem;
   font-weight: 200;
+  font-size: .8125rem;
 }

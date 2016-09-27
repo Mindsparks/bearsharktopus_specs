@@ -82,6 +82,27 @@
   box-shadow: inset 0 0 0 2px #D8D8D8;
 }
 
+.checkbox-on-dark {
+  height: 16px;
+  width: 16px;
+  background-color: #52A0DE;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.checkbox-on-dark .check {
+  position: relative;
+  left: 3px;
+  font-size: 13px;
+}
+
+.checkbox-off-dark {
+  height: 16px;
+  width: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 2px #D8D8D8;
+}
+
 .radio-on {
   width: 16px;
   height: 16px;
@@ -114,6 +135,28 @@
   background-color: #52A0DE;
 }
 
+.radio-on-dark {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #52A0DE;
+  box-shadow: inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 4px white;
+  transition: box-shadow 1s ease;
+  transition: background-color 1s ease;
+  margin-bottom: 10px;
+}
+
+.radio-off-dark {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0.8), inset 0px 0px 0px 6px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 1s ease;
+  transition: background-color 1s ease;
+  margin-bottom: 10px;
+}
+
 .dropdown {
   background-color: #e4eaee;
   width: 200px;
@@ -122,7 +165,7 @@
 
 .dropdown .option {
   font-family: "ProximaNova";
-  font-weight: 500;
+  font-weight: 400;
   padding-left: 10px;
   line-height: 33px;
 }
@@ -162,6 +205,55 @@
   display: block;
 }
 
+.dropdown-dark {
+  background-color: #758590;
+  width: 200px;
+  height: 33px;
+}
+
+.dropdown-dark .option {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  color: #e4eaee;
+  padding-left: 10px;
+  line-height: 33px;
+}
+
+.dropdown-dark .option .right {
+  padding-right: 10px;
+  float: right;
+}
+
+.dropdown-dark .values {
+  background-color: #252b31;
+  border: 2px solid #758590;
+  width: 100%;
+  display: none;
+}
+
+.dropdown-dark .values ul {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-dark .values ul li {
+  color: #e4eaee;
+  font-family: "ProximaNova";
+  padding: 10px;
+  width: 100%;
+  text-align: middle;
+  list-style: none;
+}
+
+.dropdown-dark .values ul li:hover {
+  background-color: #758590;
+}
+
+.dropdown-dark:hover .values {
+  display: block;
+  cursor: pointer;
+}
+
 .button {
   height: 40px;
   width: 127px;
@@ -191,7 +283,7 @@
 
 .button-green .button-text {
   letter-spacing: 3px;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .button-green:hover {
@@ -230,16 +322,77 @@
 }
 
 .sidebar {
+  z-index: 99;
   width: 156px;
   background-color: #40494e;
   height: 100%;
+  position: fixed;
+  top: 56px;
   box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.4);
   padding-top: 15px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.sidebar .nav-item .nav-icon {
+  float: left;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.sidebar .nav-item .nav-icon .icon-pencil {
+  font-size: 24px;
+  line-height: 50px;
+  display: inline;
+  color: #D7D7D7;
+}
+
+.sidebar .nav-item .nav-icon .icon-stats-bars {
+  font-size: 24px;
+  line-height: 50px;
+  display: inline;
+  color: #D7D7D7;
+}
+
+.sidebar .nav-item .nav-icon .icon-display {
+  font-size: 24px;
+  line-height: 50px;
+  display: inline;
+  color: #D7D7D7;
+}
+
+.sidebar .nav-item .nav-icon .icon-cogs {
+  font-size: 24px;
+  line-height: 50px;
+  display: inline;
+  color: #D7D7D7;
+}
+
+.sidebar .nav-item .nav-text {
+  position: relative;
+  top: 1.2px;
+  font-family: "Gotham";
+  padding-left: 12px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .17rem;
+  display: inline;
+  float: left;
+  color: #E9E9E9;
+  text-transform: uppercase;
+  line-height: 50px;
 }
 
 @media only screen and (max-width: 768px) {
   .sidebar {
     width: 58px;
+  }
+  .sidebar .nav-item .nav-text {
+    display: none;
   }
 }
 
@@ -259,6 +412,27 @@
 }
 
 .formfield:focus {
+  border: 2px solid #ffcb4d;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.formfield-dark {
+  height: 31px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #cfe2ee;
+  color: #40494e;
+  padding: 7px;
+  font-family: "ProximaNova";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #535353;
+  font-size: 14px;
+  letter-spacing: .3px;
+}
+
+.formfield-dark:focus {
   border: 2px solid #ffcb4d;
   -webkit-appearance: none;
   outline: none;
@@ -358,6 +532,8 @@ h1 {
   font-weight: 200;
   letter-spacing: .4rem;
   color: #4D4D4D;
+  margin-bottom: 40px;
+  font-size: 1.375rem;
 }
 
 h1.light {
@@ -368,6 +544,7 @@ h2 {
   font-weight: 200;
   letter-spacing: .1rem;
   color: #797979;
+  font-size: 1.125rem;
 }
 
 h2.light {
@@ -378,6 +555,7 @@ h3 {
   font-weight: 500;
   letter-spacing: .1rem;
   color: #7B7B7B;
+  font-size: .875rem;
 }
 
 h3.light {
@@ -388,6 +566,7 @@ h4 {
   font-weight: 400;
   letter-spacing: .1rem;
   color: #959595;
+  font-size: .875rem;
 }
 
 h4.light {
@@ -399,6 +578,7 @@ p.proxima-nova {
   color: #717171;
   letter-spacing: .1rem;
   line-height: 1.2rem;
+  font-size: .8125rem;
 }
 
 p.light {
@@ -408,24 +588,29 @@ p.light {
 h1.gotham {
   font-family: "Gotham";
   opacity: .6;
+  font-size: 1.375rem;
 }
 
 h2.gotham {
   font-family: "Gotham";
+  font-size: 1.125rem;
 }
 
 h3.gotham {
   font-family: "Gotham";
+  font-size: .875rem;
 }
 
 h4.gotham {
   font-family: "Gotham";
+  font-size: .875rem;
 }
 
 p.gotham {
   font-family: "Gotham";
   line-height: 1.4rem;
   font-weight: 200;
+  font-size: .8125rem;
 }
 
 .toggle-on {
@@ -596,17 +781,12 @@ p.gotham {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  margin: 20px 0px 50px 20px;
   display: block;
   font-size: 2.5rem;
   color: #4B5054;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-columns {
-  column-count: 4;
 }
 
 .icon-pencil:before {
@@ -665,6 +845,10 @@ p.gotham {
   content: "\ed50";
 }
 
+.icon-question4:before {
+  content: "\ed56";
+}
+
 .icon-plus3:before {
   content: "\ed5d";
 }
@@ -689,16 +873,32 @@ p.gotham {
   content: "\edb9";
 }
 
+.icon-arrow-right3:before {
+  content: "\edbd";
+}
+
 .icon-arrow-down3:before {
   content: "\edc1";
+}
+
+.icon-arrow-left3:before {
+  content: "\edc5";
 }
 
 .icon-arrow-up5:before {
   content: "\edc7";
 }
 
+.icon-arrow-right5:before {
+  content: "\edc8";
+}
+
 .icon-arrow-down5:before {
   content: "\edc9";
+}
+
+.icon-arrow-left5:before {
+  content: "\edca";
 }
 
 .icon-checkbox-partial:before {
@@ -711,6 +911,8 @@ p.gotham {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   height: 56px;
   padding: 12px 0px;
+  position: fixed;
+  z-index: 100;
 }
 
 .header .logo {
@@ -721,6 +923,45 @@ p.gotham {
   background-repeat: no-repeat;
   vertical-align: middle;
   background-position: left center;
+}
+
+.table {
+  max-width: 1040px;
+}
+
+.table .row-sort {
+  height: 31px;
+  background-color: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2px;
+}
+
+.table .row {
+  height: 68px;
+  background-color: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2px;
+}
+
+.breadcrumb {
+  margin-bottom: 24px;
+}
+
+.breadcrumb .icon-arrow-left3.small {
+  float: left;
+  font-size: 12px;
+  margin-right: 5px;
+  color: #C1C1C1;
+}
+
+.breadcrumb .breadcrumb-text {
+  float: left;
+  font-family: "Gotham";
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #C1C1C1;
 }
 
 html {
@@ -780,6 +1021,7 @@ p {
   border-radius: 3px;
   padding: 10px 14px;
   text-decoration: none;
+  margin-left: 5px;
 }
 
 .links a:hover {
@@ -792,4 +1034,17 @@ p {
 
 .content-wrapper {
   margin: 50px 50px;
+}
+
+.content {
+  padding: 85px 0px 0px 200px;
+  background-color: #F9F9F9;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 85px 0px 0px 92px;
+  }
 }

@@ -51,6 +51,7 @@ p {
     border-radius: 3px;
     padding: 10px 14px;
     text-decoration: none;
+    margin-left: 5px;
   }
   a:hover {
     background-color: #777;
@@ -63,4 +64,17 @@ p {
 
 .content-wrapper {
   margin: 50px 50px;
+}
+
+.content {
+  padding: 85px 0px 0px 200px;
+  background-color: $light-background;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 85px 0px 0px 92px;
+  }
 }
