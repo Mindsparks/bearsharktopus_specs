@@ -1,0 +1,74 @@
+.publish {
+  height: 37px;
+  width: 100px;
+  background-color: #0DBB6F;
+  font-family: "Gotham";
+  font-size: .75rem;
+  font-weight: 400;
+  color: white;
+  letter-spacing: .1rem;
+  line-height: 37px;
+  border-radius: 37px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.publish-active {
+  height: 37px;
+  background-color: #FFCB4D;
+  color: #6C500B;
+  font-family: "Gotham";
+  font-size: .75rem;
+  font-weight: 400;
+  border-radius: 37px;
+  width: 130px;
+  margin-bottom: 10px;
+  letter-spacing: .1rem;
+  line-height: 37px;
+  .icon-loop3 {
+    color: #6C500B;
+    margin-left: 20px;
+    margin-right: 8px;
+    float: left;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 35px;
+   }
+}
+
+.button-save {
+  height: 37px;
+  border-radius: 37px;
+  background-color: #E7E7E7;
+  width: 37px;
+  border: 2px solid #717171;
+  .icon-floppy-disk {
+     font-size: 1.1rem;
+     text-align: center;
+     line-height: 33px;
+   }
+}
+
+.tooltip {
+  .tooltip-content {
+    height: 31px;
+    background-color: #424E56;
+    border-radius: 2px;
+    color: white;
+    line-height: 31px;
+    font-family: "Gotham";
+    font-size: 13px;
+    padding: 0px 10px;
+    width: 310px;
+  }
+  .tooltip-triangle {
+    height: 16px;
+    width: 16px;
+    background-color: #424E56;
+    position: relative;
+    top: -39px;
+    right: -250px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

@@ -27,18 +27,56 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .icon-pencil:before {
   content: "\e90e";
+}
+.icon-pencil2:before {
+  content: "\e90f";
+}
+.icon-brush:before {
+  content: "\e928";
+}
+.icon-paint-format:before {
+  content: "\e938";
 }
 .icon-image:before {
   content: "\e93b";
 }
+.icon-files-empty:before {
+  content: "\e99f";
+}
+.icon-file-download2:before {
+  content: "\e9a6";
+}
 .icon-file-upload2:before {
   content: "\e9a8";
 }
+.icon-copy4:before {
+  content: "\e9c8";
+}
+.icon-stack2:before {
+  content: "\e9ce";
+}
+.icon-folder-open2:before {
+  content: "\e9e8";
+}
+.icon-calculator:before {
+  content: "\ea17";
+}
+.icon-compass6:before {
+  content: "\ea44";
+}
+.icon-clock:before {
+  content: "\ea4d";
+}
 .icon-display:before {
   content: "\ea73";
+}
+.icon-mobile:before {
+  content: "\ea78";
+}
+.icon-download:before {
+  content: "\ea87";
 }
 .icon-upload:before {
   content: "\ea88";
@@ -46,8 +84,26 @@
 .icon-floppy-disk:before {
   content: "\ea89";
 }
+.icon-redo:before {
+  content: "\eaa6";
+}
+.icon-bubble:before {
+  content: "\eac4";
+}
+.icon-user-plus:before {
+  content: "\eaf9";
+}
+.icon-zoom-in2:before {
+  content: "\eb34";
+}
+.icon-zoom-out2:before {
+  content: "\eb35";
+}
 .icon-search3:before {
   content: "\eb36";
+}
+.icon-cog:before {
+  content: "\eb5f";
 }
 .icon-cogs:before {
   content: "\eb60";
@@ -55,14 +111,41 @@
 .icon-stats-bars:before {
   content: "\eb88";
 }
+.icon-trophy2:before {
+  content: "\eba7";
+}
+.icon-meter:before {
+  content: "\ebde";
+}
 .icon-meter-fast:before {
   content: "\ebe2";
 }
 .icon-bin:before {
   content: "\ebfd";
 }
+.icon-bin2:before {
+  content: "\ebfe";
+}
+.icon-brain:before {
+  content: "\ec27";
+}
 .icon-clipboard2:before {
   content: "\ec51";
+}
+.icon-clipboard6:before {
+  content: "\ec55";
+}
+.icon-grid7:before {
+  content: "\ec63";
+}
+.icon-tree7:before {
+  content: "\ec66";
+}
+.icon-menu:before {
+  content: "\ec6a";
+}
+.icon-download4:before {
+  content: "\ec83";
 }
 .icon-eye:before {
   content: "\ecae";
@@ -73,11 +156,17 @@
 .icon-question4:before {
   content: "\ed56";
 }
+.icon-plus2:before {
+  content: "\ed5b";
+}
 .icon-plus3:before {
   content: "\ed5d";
 }
 .icon-plus-circle2:before {
   content: "\ed61";
+}
+.icon-info:before {
+  content: "\ed63";
 }
 .icon-cross2:before {
   content: "\ed6d";
@@ -112,6 +201,33 @@
 .icon-arrow-left5:before {
   content: "\edca";
 }
+.icon-arrow-left6:before {
+  content: "\edd2";
+}
+.icon-arrow-up8:before {
+  content: "\eddc";
+}
+.icon-arrow-right8:before {
+  content: "\edde";
+}
+.icon-arrow-down8:before {
+  content: "\ede0";
+}
+.icon-arrow-left8:before {
+  content: "\ede2";
+}
 .icon-checkbox-partial:before {
   content: "\ee68";
+}
+.icon-width:before {
+  content: "\ee96";
+}
+.icon-embed:before {
+  content: "\eecc";
+}
+.icon-share3:before {
+  content: "\eee0";
+}
+.icon-youtube:before {
+  content: "\eefc";
 }

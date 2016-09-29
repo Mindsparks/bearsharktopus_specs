@@ -1,7 +1,7 @@
 .sidebar {
   z-index: 99; //Below .header class.
   width: 156px;
-  background-color: $gray-5;
+  background-color: #364049;
   height: 100%;
   position: fixed;
   top: 56px;
@@ -53,6 +53,34 @@
       color: #E9E9E9;
       text-transform: uppercase;
       line-height: 50px;
+    }
+    &:hover {
+      background-color: #44525A;
+      cursor: pointer;
+    }
+  }
+  .nav-item-list {
+    background-color: #2D343A;
+    padding: 14px 0px;
+    .nav-item-list-item {
+      color: #A8AEB4;
+      font-family: "Gotham";
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      padding: 14px 15px 14px 15px;
+      &:hover {
+        color: #E5EEF5;
+        cursor: pointer;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      position: absolute;
+      padding-left: 10px;
+      left: 56px;
+      top: 120px;
+      min-width: 170px;
     }
   }
 }
