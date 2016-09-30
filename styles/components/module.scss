@@ -1,0 +1,33 @@
+.module {
+  border: 2px solid #CCC;
+  width: 325px;
+  padding: 9px;
+  .module-sort {
+    float: left;
+    height: 100%;
+    margin-right: 8px;
+    .icon-arrow-up8 {
+      font-size: 14px;
+      color: #919DA4;
+    }
+    .icon-arrow-down8 {
+      font-size: 14px;
+      color: #31383E;
+    }
+  }
+  .icon-cross2 {
+    font-size: 12px;
+    color: #8DA5B3;
+    float: right;
+  }
+}
+
+.module.light {
+  border-color: #CFDFE7;
+  background-color: #FEFEFE;
+}
+
+.module.dark {
+  border-color: #3E484D;
+  background-color: #363E43;
+}

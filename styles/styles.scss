@@ -10,18 +10,27 @@
 @import "components/radio";
 @import "components/dropdown";
 @import "components/button";
-@import "components/sidebar";
 @import "components/formfield";
-@import "components/colors";
-@import "components/fonts";
+@import "components/table";
 @import "components/toggle";
 @import "components/range";
-@import "components/icons";
-@import "components/header";
-@import "components/table";
 @import "components/breadcrumb";
-@import "components/layout";
 @import "components/publish";
+@import "components/uploader";
+@import "components/modal";
+@import "components/module";
+
+//Features
+@import "features/sidebar";
+@import "features/header";
+
+//Styles
+@import "styles/colors";
+@import "styles/fonts";
+@import "styles/icons";
+
+//Layout
+@import "layout/layout";
 
 //Pages
 @import "pages/index";
