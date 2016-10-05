@@ -1,38 +1,67 @@
 .publish {
   height: 37px;
-  width: 100px;
   background-color: #0DBB6F;
-  font-family: "Gotham";
-  font-size: .75rem;
-  font-weight: 400;
-  color: white;
-  letter-spacing: .1rem;
-  line-height: 37px;
   border-radius: 37px;
-  text-align: center;
-  margin-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+  p {
+    font-family: "Gotham";
+    font-size: .75rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: .1rem;
+    line-height: 37px;
+    color: white;
+    margin: 0px 20px;
+    text-align: center;
+  }
 }
 
 .publish-active {
   height: 37px;
   background-color: #FFCB4D;
-  color: #6C500B;
-  font-family: "Gotham";
-  font-size: .75rem;
-  font-weight: 400;
   border-radius: 37px;
-  width: 130px;
-  margin-bottom: 10px;
-  letter-spacing: .1rem;
-  line-height: 37px;
+  display: inline-block;
+  cursor: pointer;
   .icon-loop3 {
     color: #6C500B;
-    margin-left: 20px;
+    margin-left: 19px;
     margin-right: 8px;
     float: left;
     font-size: 1.1rem;
-    text-align: center;
     line-height: 35px;
+    position: relative;
+    top: 1px;
+    transition: -webkit-transform 1s ease;
+   }
+   p.publish-active {
+     color: #6C500B;
+     font-family: "Gotham";
+     font-size: .75rem;
+     font-weight: 400;
+     letter-spacing: .1rem;
+     line-height: 37px;
+     margin-right: 18px;
+   }
+   &:hover {
+     .icon-loop3 {
+       -webkit-transform: rotate(360deg);
+       /*.class{
+       animation-name: out;
+       animation-duration:2s;
+      }
+      .class:hover{
+         animation-name: in;
+         animation-duration:5s;
+         animation-iteration-count:infinite;
+      }
+      @keyframe in{
+          to {transform: rotate(360deg);}
+      }
+      @keyframe out{
+          to {transform: rotate(0deg);}
+      }*/
+     }
    }
 }
 
@@ -47,28 +76,4 @@
      text-align: center;
      line-height: 33px;
    }
-}
-
-.tooltip {
-  .tooltip-content {
-    height: 31px;
-    background-color: #424E56;
-    border-radius: 2px;
-    color: white;
-    line-height: 31px;
-    font-family: "Gotham";
-    font-size: 13px;
-    padding: 0px 10px;
-    width: 310px;
-  }
-  .tooltip-triangle {
-    height: 16px;
-    width: 16px;
-    background-color: #424E56;
-    position: relative;
-    top: -39px;
-    right: -250px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
 }

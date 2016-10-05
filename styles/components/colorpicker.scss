@@ -1,0 +1,29 @@
+.colorpicker {
+  width: 52px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px 0px 5px 5px;
+  background-color: #ECECEC;
+  .colorpicker-current {
+    display: inline-block;
+    width: 62%;
+    height: 100%;
+    background-color: yellow;
+    float: left;
+    margin-right: 2px;
+  }
+  .icon-arrow-down5 {
+    line-height: 30px;
+    display: inline-block;
+    font-size: 14px;
+    color: #656565;
+    float: left;
+  }
+}
+
+.dark {
+  background-color: #40494E;
+  .icon-arrow-down5 {
+    color: #C8D3DD;
+  }
+}

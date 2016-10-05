@@ -1,0 +1,30 @@
+.modal {
+  display: inline-block;
+  background-color: #2A3138;
+  min-height: 200px;
+  min-width: 300px;
+  max-width: 350px;
+  .modal-navbar {
+    background-color: #484D52;
+    height: 50px;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        color: #BECAD5;
+        padding: 0px 10px;
+        float: left;
+        line-height: 50px;
+        &:first-child {
+          padding-left: 20px;
+        }
+      }
+    }
+    .icon-cross2 {
+      float: right;
+      font-size: 20px;
+      color: #BECAD5;
+    }
+  }
+}

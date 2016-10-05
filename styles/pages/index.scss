@@ -39,7 +39,7 @@ $dark-background: #252B31;
   font-size: 0;
   content: " ";
   clear: both;
-  height: 0;
+  height: 0px;
  }
 
  .clearfix {
@@ -71,6 +71,11 @@ $dark-background: #252B31;
   padding: 20px;
   border-radius: 6px;
   box-shadow: 2px 2px 0px 2px #EEE;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    z-index: 2;
+  }
 }
 
 .area-dark {
@@ -79,8 +84,13 @@ $dark-background: #252B31;
   padding: 20px;
   border-radius: 6px;
   box-shadow: 2px 2px 0px 2px #666;
+  position: relative;
   p {
     color: #DDD;
+  }
+  z-index: 1;
+  &:hover {
+    z-index: 2;
   }
 }
 
@@ -105,6 +115,10 @@ $dark-background: #252B31;
   }
 }
 
+.icon-columns {
+  column-count: 3;
+  column-width: 200px;
+}
 
 /* Move to content.scss */
 .content {

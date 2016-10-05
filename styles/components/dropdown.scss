@@ -1,15 +1,21 @@
 .dropdown {
   background-color: $gray-0;
-  width: 200px;
   height: 33px;
+  cursor: pointer;
+  z-index: 998;
+  min-width: 325px;
+  display: inline-block;
   .option {
     font-family: "ProximaNova";
     font-weight: 400;
     padding-left: 10px;
     line-height: 33px;
-    .right {
-      padding-right: 10px;
+    .icon-arrow-down5 {
+      color: $gray-3;
+      font-size: 20px;
       float: right;
+      line-height: 33px;
+      padding: 0px 8px;
     }
   }
   .values {
@@ -41,46 +47,24 @@
   }
 }
 
-.dropdown-dark {
+.dropdown.dark {
   background-color: $gray-3;
-  width: 200px;
-  height: 33px;
   .option {
-    font-family: "ProximaNova";
-    font-weight: 400;
     color: $gray-0;
-    padding-left: 10px;
-    line-height: 33px;
-    .right {
-      padding-right: 10px;
-      float: right;
+    .icon-arrow-down5 {
+      color: $gray-0;
     }
   }
   .values {
     background-color: $gray-6;
     border: 2px solid $gray-3;
-    width: 100%;
     ul {
-      margin: 0;
-      padding: 0;
       li {
         color: $gray-0;
-        font-family: "ProximaNova";
-        padding: 10px;
-        width: 100%;
-        text-align: middle;
-        list-style: none;
         &:hover {
           background-color: $gray-3;
         }
       }
-    }
-    display: none;
-  }
-  &:hover {
-    .values {
-      display: block;
-      cursor: pointer;
     }
   }
 }

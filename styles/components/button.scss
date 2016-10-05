@@ -2,7 +2,6 @@
   height: 40px;
   width: 127px;
   border-radius: 4px;
-  margin: 0px auto 12px;
   background-color: black;
   @media only screen and (max-width: 768px) {
     width: 42px;
@@ -12,6 +11,13 @@
 .button-blue {
   background-color: $blue;
   transition: background-color .2s ease;
+  .icon-file-upload2 {
+    float: left;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 40px;
+    margin-left: 10px;
+  }
   &:hover {
     background-color: $dark-blue;
     cursor: pointer;
@@ -21,6 +27,14 @@
 .button-green {
   background-color: $green;
   transition: background-color .2s ease;
+  .icon-plus3 {
+    float: left;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 11px;
+  }
   .button-text {
     letter-spacing: 3px;
     font-size: 1.1rem;
@@ -49,7 +63,7 @@
   font-family: "ProximaNova";
   letter-spacing: 1.5px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 42px;
   padding-left: 40px;
   @media only screen and (max-width: 768px) {
     display: none;

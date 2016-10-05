@@ -1,53 +1,31 @@
-.radio-on {
+.radio {
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background-color: #52A0DE;
-  box-shadow: inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 4px white;
-  transition: box-shadow 1s ease;
-  transition: background-color 1s ease;
-  margin-bottom: 10px;
+  /*Animation*/ background-color: #52A0DE;
+  /**/transition: background-color .2s ease;
+  /*Animation*/ box-shadow: inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 4px white;
+  /**/ transition: box-shadow .2s ease;
+  &:hover {
+    background-color: #52A0DE;
+    box-shadow: inset inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 4px white;
+  }
 }
 
-.radio-on:hover {
-  box-shadow: inset 0px 0px 0px 2px #D8D8D8, inset 0px 0px 0px 6px white;
-  background-color: #D8D8D8;
-}
-
-.radio-off {
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
+.radio.off {
   background-color: #EDECED;
-  box-shadow: inset 0px 0px 0px 2px #D8D8D8, inset 0px 0px 0px 6px white;
-  transition: box-shadow 1s ease;
-  transition: background-color 1s ease;
-  margin-bottom: 10px;
+  box-shadow: inset 0px 0px 0px 2px #D8D8D8, inset 0px 0px 0px 10px white;
+  &:hover {
+    background-color:  #52A0DE;
+    box-shadow: inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 6px white;
+  }
 }
 
-.radio-off:hover {
-  box-shadow: inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 6px white;
-  background-color:  #52A0DE;
-}
-
-.radio-on-dark {
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  background-color: #52A0DE;
-  box-shadow: inset 0px 0px 0px 2px #52A0DE, inset 0px 0px 0px 4px white;
-  transition: box-shadow 1s ease;
-  transition: background-color 1s ease;
-  margin-bottom: 10px;
-}
-
-.radio-off-dark {
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
+.radio.off.dark {
   background-color: rgba(255,255,255,.6);
-  box-shadow: inset 0px 0px 0px 2px rgba(255,255,255,.8), inset 0px 0px 0px 6px rgba(0,0,0,.6);
-  transition: box-shadow 1s ease;
-  transition: background-color 1s ease;
-  margin-bottom: 10px;
+  box-shadow: inset 0px 0px 0px 2px rgba(255,255,255,.8), inset 0px 0px 0px 10px rgba(0,0,0,.6);
+  &:hover {
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 2px white, inset 0px 0px 0px 6px rgba(0,0,0,.8);
+  }
 }

@@ -1,0 +1,51 @@
+.uploader {
+  .uploader-dd {
+    height: 70px;
+    width: 116px;
+    background-color: #E8EDF0;
+    border: 1px solid #E8EDF0;
+    margin-right: 10px;
+    float: left;
+    .icon-image {
+      color: #C6CFD4;
+      line-height: 70px;
+      text-align: center;
+    }
+  }
+  .uploader-button {
+    display: inline-block;
+    height: 20px;
+    float: left;
+    .icon-upload {
+      float: left;
+      font-size: 18px;
+      color: #C6CFD4;
+      margin-bottom: 10px;
+      background-color: green;
+      p {
+        float: left;
+        display: inline-block;
+      }
+    }
+    .icon-bin {
+      float: left;
+      font-size: 18px;
+      color: #C6CFD4;
+      background-color: red;
+      p {
+        float: left;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.uploader.dark {
+  .uploader-dd {
+    background-color: #40494E;
+    border: 1px solid #758590;
+    .icon-image {
+      color: #677984;
+    }
+  }
+}

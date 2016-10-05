@@ -1,6 +1,6 @@
 // Look into http://codepen.io/thebabydino/pen/jEXjVE
 
-$track-color: #ECECEC !default;
+$track-color: #D8E2EB !default;
 $thumb-color: #52A0DE !default;
 
 $thumb-radius: 3px !default;
@@ -104,5 +104,12 @@ input {
 
   &:focus::-ms-fill-upper {
     background: lighten($track-color, $contrast);
+  }
+}
+
+.rangedark {
+  &::-webkit-slider-runnable-track {
+    @include track();
+    background: #758590;
   }
 }
