@@ -5,7 +5,7 @@
   height: 56px;
   padding: 12px 0px;
   position: fixed;
-  z-index: 100;
+  z-index: 9999;
   .logo {
     margin-left: 15px;
     height: 100%;
@@ -14,5 +14,47 @@
     background-repeat: no-repeat;
     vertical-align: middle;
     background-position: left center;
+  }
+}
+
+.header.builder {
+  position: relative;
+  top: 100px;
+  padding: 0px;
+  .logo {
+    width: 82px;
+    margin-left: 0px;
+    background-image: url("../images/SnapApp-Icon-2015-white.svg");
+    background-color: #036CC2;
+    background-position: center;
+    background-size: 32px;
+    display: inline-block;
+  }
+  .icon-arrow-left3{
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    color: #D4D4D4;
+  }
+  .header-app-type {
+    display: inline-block;
+    .icon-compass6 {
+      font-size: 28px;
+      position: relative;
+      top: 6px;
+      color: #656565;
+    }
+  }
+  .header-app-name {
+    display: inline-block;
+    color: #6C6C6C;
+    font-family: "Gotham";
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: .05rem;
+    padding-left: 10px;
+    text-transform: uppercase;
   }
 }

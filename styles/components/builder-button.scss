@@ -1,0 +1,19 @@
+.builder-button-save {
+  height: 37px;
+  border-radius: 37px;
+  background-color: #E7E7E7;
+  width: 37px;
+  border: 2px solid #717171;
+  cursor: pointer;
+  .icon-floppy-disk {
+     font-size: 1.1rem;
+     text-align: center;
+     line-height: 33px;
+   }
+   &:hover {
+     background-color: #717171;
+     .icon-floppy-disk {
+       color: white;
+     }
+   }
+}

@@ -42,6 +42,12 @@
 .icon-image:before {
   content: "\e93b";
 }
+.icon-video-camera3:before {
+  content: "\e965";
+}
+.icon-file-empty:before {
+  content: "\e99d";
+}
 .icon-files-empty:before {
   content: "\e99f";
 }
@@ -132,6 +138,9 @@
 .icon-clipboard2:before {
   content: "\ec51";
 }
+.icon-clipboard5:before {
+  content: "\ec54";
+}
 .icon-clipboard6:before {
   content: "\ec55";
 }
@@ -150,11 +159,17 @@
 .icon-eye:before {
   content: "\ecae";
 }
+.icon-stack-picture:before {
+  content: "\ed3f";
+}
 .icon-warning2:before {
   content: "\ed50";
 }
 .icon-question4:before {
   content: "\ed56";
+}
+.icon-question6:before {
+  content: "\ed58";
 }
 .icon-plus2:before {
   content: "\ed5b";
@@ -218,6 +233,9 @@
 }
 .icon-checkbox-partial:before {
   content: "\ee68";
+}
+.icon-height2:before {
+  content: "\ee95";
 }
 .icon-width:before {
   content: "\ee96";

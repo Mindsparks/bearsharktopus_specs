@@ -1,0 +1,172 @@
+.launchpad {
+  font-size: 0px;
+  .launchpad-nav {
+    float: left;
+    width: 58px;
+    height: 100%;
+    background-color: #31383E;
+    padding-top: 12px;
+    .launchpad-nav-type {
+      text-align: center;
+      .launchpad-nav-type-icon {
+        font-size: 28px;
+        color: #65727D;
+      }
+      p.launchpad-nav-type-text {
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        color: #65727D;
+        font-weight: 300;
+        line-height: 28px;
+      }
+      &:hover {
+        cursor: pointer;
+        .launchpad-nav-type-icon {
+          color: #CECECE;
+        }
+        p.launchpad-nav-type-text {
+          color: #CECECE;
+        }
+      }
+    }
+  }
+  .launchpad-type {
+    float: left;
+    width: 242px;
+    height: 100%;
+    background-color: #171D21;
+    padding: 20px;
+    .launchpad-type-selection {
+      height: 60px;
+      margin-bottom: 20px;
+      .launchpad-type-selection-icon {
+        display: inline-block;
+        color: #65737F;
+        line-height: 60px;
+        font-size: 42px;
+      }
+      .launchpad-type-selection-info {
+        display: inline-block;
+        width: 160px;
+        position: relative;
+        top: 6px;
+        padding-left: 14px;
+        p.launchpad-type-selection-name {
+          color: #65737F;
+          padding: 0px 0px 5px 0px;
+          font-weight: 100;
+          font-family: "Gotham";
+          font-size: 11px;
+        }
+        p.launchpad-type-selection-desc {
+          font-weight: 100;
+          color: #65737F;
+          line-height: 1.1rem;
+          font-size: 11px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .icon-question4 {
+          color: #FFCB4D;
+        }
+        .icon-calculator {
+          color: #FFCB4D;
+        }
+        .launchpad-type-selection-info {
+          .launchpad-type-selection-name {
+            color: #FFCB4D;
+            font-weight: 500;
+          }
+          .launchpad-type-selection-desc {
+            color: #BECAD5;
+          }
+        }
+      }
+    }
+  }
+  .launchpad-theme {
+    float: left;
+    width: 242px;
+    height: 100%;
+    background-color: #171D21;
+    padding: 20px;
+    .launchpad-theme-section {
+      p.launchpad-theme-section-title {
+        font-weight: 300;
+        font-style: "Gotham";
+        font-size: 17px;
+        color: #6B7A88;
+      }
+      &:last-child {
+        margin-top: 16px;
+      }
+    }
+    .launchpad-theme-row {
+      display: block;
+      .launchpad-theme-selection {
+        display: inline-block;
+        .launchpad-theme-selection-thumb {
+          height: 60px;
+          width: 92px;
+          background-color: gray;
+        }
+        &:last-child {
+          margin-left: 16px;
+        }
+        p.launchpad-theme-selection-name {
+          padding-top: 6px;
+          text-align: center;
+          font-family: "Gotham";
+          font-weight: 300;
+          font-size: 11px;
+          color: #65737F;
+        }
+        &:hover {
+          cursor: pointer;
+          .launchpad-theme-selection-thumb {
+            border: 3px solid #FFCB4D;
+          }
+          p.launchpad-theme-selection-name {
+            color: #E9E9E9;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .launchpad-layout {
+    float: left;
+    width: 242px;
+    height: 100%;
+    background-color: #171D21;
+    padding: 20px;
+    .launchpad-layout-selection {
+      padding-top: 14px;
+      .launchpad-layout-image {
+        width: 200px;
+        height: 150px;
+        background-color: #31383E;
+        border: 4px solid #65737F;
+      }
+      p.launchpad-layout-text {
+        font-family: "Gotham";
+        font-weight: 300;
+        font-size: 12px;
+        text-align: center;
+        color: #E9E9E9;
+        padding-top: 8px;
+      }
+      &:hover {
+        cursor: pointer;
+        .launchpad-layout-image {
+          border: 4px solid #FFCB4D;
+        }
+      }
+      &:first-child {
+        padding-top: 0px;
+      }
+    }
+  }
+}

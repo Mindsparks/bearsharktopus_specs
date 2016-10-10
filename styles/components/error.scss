@@ -1,0 +1,23 @@
+.error {
+  p {
+    display: inline-block;
+    color: #ED7373;
+    font-family: "Gotham";
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .icon-warning2 {
+    display: inline-block;
+    color: #ED7373;
+    font-size: 12px;
+  }
+}
+
+.error.dark {
+  p {
+    color: #FF9595;
+  }
+  .icon-warning2 {
+    color: #FF9595;
+  }
+}

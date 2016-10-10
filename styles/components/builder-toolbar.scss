@@ -1,0 +1,22 @@
+.builder-toolbar {
+  .builder-toolbar-item {
+    display: inline-block;
+    width: 68px;
+    height: 55px;
+    .builder-toolbar-icon {
+      text-align: center;
+      font-size: 24px;
+      color: #AEB2B6;
+    }
+    p.builder-toolbar-item-name {
+      text-align: center;
+      color: #AEB2B6;
+      font-size: 13px;
+      font-family: "ProximaNova";
+      font-weight: 500;
+      position: relative;
+      top: 10px;
+      letter-spacing: .05rem;
+    }
+  }
+}

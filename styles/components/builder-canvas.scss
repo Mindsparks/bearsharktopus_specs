@@ -1,0 +1,64 @@
+.base-background {
+  background-color: #F0F0F1;
+  padding: 50px 0px 0px 50px;
+  height: 100%;
+}
+
+.builder-canvas {
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,.2);
+  width: 800px;
+  height: 600px;
+  font-size: 0px;
+}
+
+.ruler {
+  .ruler-box {
+    vertical-align: top;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    margin-right: 3px;
+  }
+  .ruler-tick-1 {
+    vertical-align: top;
+    display: inline-block;
+    height: 8px;
+    width: 1px;
+    background-color: #DCDCDC;
+    margin-left: 4px;
+  }
+  .ruler-tick-5 {
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    background-color: #CECECE;
+    margin-left: 4px;
+  }
+}
+
+.vertical {
+  .ruler-box {
+    vertical-align: inherit;
+    display: block;
+    margin-left: 0px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+  .ruler-tick-1 {
+    vertical-align: inherit;
+    display: block;
+    margin-left: 0px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+  .ruler-tick-5 {
+    vertical-align: inherit;
+    display: block;
+    margin-left: 0px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}
