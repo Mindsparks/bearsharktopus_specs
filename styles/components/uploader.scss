@@ -1,51 +1,65 @@
 .uploader {
-  .uploader-dd {
+  .uploader-dragdrop {
+    display: inline-block;
     height: 70px;
     width: 116px;
-    background-color: #E8EDF0;
-    border: 1px solid #E8EDF0;
-    margin-right: 10px;
-    float: left;
+    background-color: $light-1;
+    border: 1px solid $light-3;
+    margin-right: 6px;
     .icon-image {
-      color: #C6CFD4;
+      color: $light-3;
       line-height: 70px;
       text-align: center;
     }
   }
-  .uploader-button {
+  .uploader-buttons {
     display: inline-block;
-    height: 20px;
-    float: left;
-    .icon-upload {
-      float: left;
-      font-size: 18px;
-      color: #C6CFD4;
-      margin-bottom: 10px;
-      background-color: green;
-      p {
-        float: left;
+    position: relative;
+    top: -4px;
+    .uploader-button {
+      display: block;
+      .icon-upload {
         display: inline-block;
+        font-size: 18px;
+        color: $light-3;
+        margin-bottom: 8px;
       }
-    }
-    .icon-bin {
-      float: left;
-      font-size: 18px;
-      color: #C6CFD4;
-      background-color: red;
-      p {
-        float: left;
+      .icon-bin2 {
         display: inline-block;
+        font-size: 18px;
+        color: $light-3;
+        margin-bottom: 10px;
+      }
+      p.uploader-button-name {
+        display: inline-block;
+        color: $light-4;
+        padding-left: 4px;
+        font-weight: 300;
+        font-family: "Gotham";
       }
     }
   }
 }
 
 .uploader.dark {
-  .uploader-dd {
-    background-color: #40494E;
-    border: 1px solid #758590;
+  .uploader-dragdrop {
+    background-color: $dark-1;
+    border: 1px solid $dark-2;
     .icon-image {
-      color: #677984;
+      color: $dark-3;
+    }
+  }
+  .uploader-buttons {
+    .uploader-button {
+      .icon-upload {
+        color: $dark-3;
+      }
+      .icon-bin2 {
+        color: $dark-3;
+      }
+      p.uploader-button-name {
+        color: $dark-3;
+      }
     }
   }
 }

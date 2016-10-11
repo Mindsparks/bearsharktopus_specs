@@ -1,29 +1,137 @@
 /* BLUE */
-$dark-blue: rgb(41,112,170); //#2970AA
-$blue: rgb(27,140,228); //#1B8CE4
-$light-blue: rgb(82, 160, 222); //#52A0DE
+$blue-dark: #2970AA; //rgb(41,112,170)
+$blue: #1B8CE4; //rgb(27,140,228)
+$blue-light: #52A0DE; //rgb(82, 160, 222)
 
 /* GREEN */
-$dark-green: rgb(31, 155, 80); //#1F9B50
-$green: rgb(15, 177, 98); //#0FB162
-$light-green: rgb(137, 190, 158); //#89BE9E
+$green-dark: #1F9B50; //rgb(31, 155, 80)
+$green: #0FB162; //rgb(15, 177, 98)
+$green-light: #89BE9E; //rgb(137, 190, 158)
 
 /* ORANGE */
-$dark-orange: rgb(247, 126, 47); //#F77E2F
-$orange: rgb(254, 143, 71); //#FE8F47
-$light-orange: rgb(255, 196, 158); //#FFC49E
+$orange-dark: #F77E2F; //rgb(247, 126, 47)
+$orange: #FE8F47; //rgb(254, 143, 71)
+$orange-light: #FFC49E; //rgb(255, 196, 158)
 
-/* GRAY */
-$gray-6: rgb(37, 43, 49); //#252B31
-$gray-5: rgb(64, 73, 78); //#40494E
-$gray-4: rgb(103, 121, 132); //#677984
-$gray-3: rgb(117, 133, 144); //#758590
-$gray-2: rgb(135, 157, 172); //#879DAC
-$gray-1: rgb(207, 226, 238); //#CFE2EE
-$gray-0: rgb(228, 234, 238); //#E4EAEE
+/* BASE COLORS */
+/* Increasing in numerical value is representative of increase in contrast with base shade. Dark-1 = low contrast with dark base color. Light-4 = high contrast with light base color. */
+$light-0: #F8F9FB; //rgb(248, 249, 251)
+$light-1: #E8EDF0; //rgb(232, 237, 240)
+$light-2: #D9DFE4; //rgb(217, 223, 228)
+$light-3: #BECAD5; //rgb(190, 202, 213)
+$light-4: #646C73; //rgb(100, 108, 115)
+$dark-0: #252B31; //rgb(37, 43, 49)
+$dark-1: #40494E; //rgb(64, 73, 78)
+$dark-2: #6C7D87; //rgb(108, 125, 135)
+$dark-3: #879DAC; //rgb(135, 157, 172)
+$dark-4: #DDE6EC; //rgb(221, 230, 236)
+$dark-new: #546571; //rgb(84,101,113)
+
+/* GREYS */
+/* Used only in the builder. */
+$grey-0: #F6F6F6;
+$grey-1: #E3E3E3;
+$grey-2: #A1A1A1;
+$grey-3: #4F4F4F;
 
 /* GOLD */
-$gold: rgb(255, 203, 77); //#FFCB4D
+$gold: #FFCB4D; //rgb(255, 203, 77)
 
 /* RED */
-$red: rgb(230, 94, 94); //#E65E5E
+$red: #E65E5E; //rgb(230, 94, 94)
+
+.swatch {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 10px;
+  .hex {
+    font-family: "ProximaNova";
+    font-size: 1rem;
+    color: white;
+    line-height: 40px;
+    padding-left: 10px;
+    font-weight: 700;
+    opacity: .8;
+  }
+  .darken {
+    color: black;
+    opacity: .6;
+  }
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.blue-dark {
+  background-color: $blue-dark;
+}
+
+.blue-light {
+  background-color: $blue-light;
+}
+
+.green {
+  background-color: $green;
+}
+
+.green-dark {
+  background-color: $green-dark;
+}
+
+.green-light {
+  background-color: $green-light;
+}
+
+.gold {
+  background-color: $gold;
+}
+
+.red {
+  background-color: $red;
+}
+
+.light-0 {
+  background-color: $light-0;
+}
+
+.light-1 {
+  background-color: $light-1;
+}
+
+.light-2 {
+  background-color: $light-2;
+}
+
+.light-3 {
+  background-color: $light-3;
+}
+
+.light-4 {
+  background-color: $light-4;
+}
+
+.dark-0 {
+  background-color: $dark-0;
+}
+
+.dark-1 {
+  background-color: $dark-1;
+}
+
+.dark-2 {
+  background-color: $dark-2;
+}
+
+.dark-3 {
+  background-color: $dark-3;
+}
+
+.dark-4 {
+  background-color: $dark-4;
+}
+
+.dark-new {
+  background-color: $dark-new;
+}

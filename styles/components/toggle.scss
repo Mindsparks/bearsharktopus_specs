@@ -16,9 +16,9 @@
 }
 
 .toggle.on {
- background-color: #52A0DE;
+ background-color: $blue-light;
  &:hover {
-   background-color: $gray-2;
+   background-color: $light-3;
    .thumb {
      left: 4px;
    }
@@ -26,14 +26,27 @@
 }
 
 .toggle.off {
-  background-color: $gray-2;
+  background-color: $light-3;
   .thumb {
     left: 11px;
   }
   &:hover {
-    background-color: #52A0DE;
+    background-color: $blue-light;
     .thumb {
       left: 9px;
     }
+  }
+}
+
+.toggle.on.dark {
+  &:hover {
+    background-color: $dark-3;
+  }
+}
+
+.toggle.off.dark {
+  background-color: $dark-3;
+  &:hover {
+    background-color: $blue-light;
   }
 }

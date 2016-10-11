@@ -2,7 +2,7 @@
   display: inline-block;
   border-radius: 4px;
   height: 25px;
-  background-color: #E8EDF0;
+  background-color: $light-1;
   p.filter-type {
     display: inline-block;
     line-height: 25px;
@@ -23,7 +23,7 @@
   }
   .filter-options {
     width: 100%;
-    background-color: #E8EDF0;
+    background-color: $light-1;
     border-radius: 0px 0px 4px 4px;
     position: relative;
     top: -2px;
@@ -40,7 +40,7 @@
     }
   }
   &:hover {
-    background-color:#D3DDE3;
+    background-color: #D3DDE3;
     cursor: pointer;
     p.filter-type {
       color: #6E8497;

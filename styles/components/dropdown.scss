@@ -1,5 +1,5 @@
 .dropdown {
-  background-color: $gray-0;
+  background-color: $light-1;
   height: 33px;
   cursor: pointer;
   z-index: 998;
@@ -11,7 +11,7 @@
     padding-left: 10px;
     line-height: 33px;
     .icon-arrow-down5 {
-      color: $gray-3;
+      color: $light-4;
       font-size: 20px;
       float: right;
       line-height: 33px;
@@ -20,7 +20,7 @@
   }
   .values {
     background-color: white;
-    border: 2px solid $gray-0;
+    border: 2px solid $light-1;
     width: 100%;
     max-height: 168px;
     overflow-y: auto;
@@ -28,15 +28,15 @@
       margin: 0;
       padding: 0;
       li {
-        color: $gray-3;
+        color: $light-4;
         font-family: "ProximaNova";
         padding: 10px;
         width: 100%;
         text-align: middle;
         list-style: none;
         &:hover {
-          color: $gray-5;
-          background-color: $gray-0;
+          color: $light-4;
+          background-color: $light-1;
         }
       }
     }
@@ -50,21 +50,22 @@
 }
 
 .dropdown.dark {
-  background-color: $gray-3;
+  background-color: $dark-3;
   .option {
-    color: $gray-0;
+    color: $dark-4;
     .icon-arrow-down5 {
-      color: $gray-0;
+      color: $dark-4;
     }
   }
   .values {
-    background-color: $gray-6;
-    border: 2px solid $gray-3;
+    background-color: $dark-0;
+    border: 2px solid $dark-3;
     ul {
       li {
-        color: $gray-0;
+        color: $dark-3;
         &:hover {
-          background-color: $gray-3;
+          color: $dark-4;
+          background-color: $dark-1;
         }
       }
     }

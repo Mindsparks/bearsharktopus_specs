@@ -8,40 +8,40 @@
     margin-right: 8px;
     .icon-arrow-up8 {
       font-size: 14px;
-      color: #919DA4;
+      color: $light-4;
       cursor: pointer;
     }
     .icon-arrow-down8 {
       font-size: 14px;
-      color: #31383E;
+      color: $light-3;
       cursor: pointer;
     }
   }
   .icon-cross2 {
     font-size: 12px;
-    color: #8DA5B3;
+    color: $light-3;
     float: right;
     cursor: pointer;
   }
 }
 
 .module.light {
-  border-color: #CFDFE7;
+  border-color: $light-1;
   background-color: #FEFEFE;
 }
 
 .module.dark {
-  border-color: #3E484D;
+  border-color: $dark-1;
   background-color: #363E43;
   .module-sort {
     .icon-arrow-up8 {
-      color: #919DA4;
+      color: $dark-3;
     }
     .icon-arrow-down8 {
-      color: #DDEDF7;
+      color: $dark-4;
     }
   }
   .icon-cross2 {
-    color: #DDEDF7;
+    color: $dark-3;
   }
 }

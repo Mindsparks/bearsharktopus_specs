@@ -57,3 +57,95 @@
 }
 
 $helvetica: helvetica, arial, sans-serif;
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "ProximaNova";
+  margin: 10px 10px 5px 0px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 200;
+  letter-spacing: .4rem;
+  color: #4D4D4D;
+  font-size: 1.375rem;
+}
+
+h1.light {
+  color: #EAF2FA;
+}
+
+h2 {
+  font-weight: 200;
+  letter-spacing: .1rem;
+  color: #797979;
+  font-size: 1.125rem;
+}
+
+h2.light {
+  color: #BECAD5;
+}
+
+h3 {
+  font-weight: 500;
+  letter-spacing: .1rem;
+  color: #7B7B7B;
+  font-size: .875rem;
+}
+
+h3.light {
+  color: #BECAD5;
+}
+
+h4 {
+  font-weight: 400;
+  letter-spacing: .1rem;
+  color: #959595;
+  font-size: .875rem;
+}
+
+h4.light {
+  color: #BECAD5;
+}
+
+p.proxima-nova {
+  font-weight: 400;
+  color: #717171;
+  letter-spacing: .1rem;
+  line-height: 1.2rem;
+  font-size: .8125rem;
+}
+
+p.light {
+  color: #BECAD5;
+}
+
+h1.gotham {
+  font-family: "Gotham";
+  opacity: .6;
+  font-size: 1.375rem;
+}
+
+h2.gotham {
+  font-family: "Gotham";
+  font-size: 1.125rem;
+}
+
+h3.gotham {
+  font-family: "Gotham";
+  font-size: .875rem;
+}
+
+h4.gotham {
+  font-family: "Gotham";
+  font-size: .875rem;
+}
+
+p.gotham {
+  font-family: "Gotham";
+  line-height: 1.4rem;
+  font-weight: 200;
+  font-size: .8125rem;
+}

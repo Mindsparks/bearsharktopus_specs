@@ -1,23 +1,22 @@
 .tooltip {
   display: inline-block;
+  .tooltip-triangle {
+    height: 0px;
+    width: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid $dark-1;
+    position: relative;
+    left: 20px;
+  }
   .tooltip-content {
     height: 31px;
-    background-color: #424E56;
+    background-color: $dark-1;
     border-radius: 2px;
     color: white;
     line-height: 31px;
     font-family: "Gotham";
     font-size: 13px;
     padding: 0px 10px;
-  }
-  .tooltip-triangle {
-    height: 16px;
-    width: 16px;
-    background-color: #424E56;
-    position: relative;
-    top: -39px;
-    right: -250px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
   }
 }

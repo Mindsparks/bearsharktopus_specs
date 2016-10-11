@@ -1,7 +1,7 @@
 // Look into http://codepen.io/thebabydino/pen/jEXjVE
 
-$track-color: #D8E2EB !default;
-$thumb-color: #52A0DE !default;
+$track-color: $light-2 !default;
+$thumb-color: $blue-light !default;
 
 $thumb-radius: 3px !default;
 $thumb-height: 18px !default;
@@ -110,6 +110,6 @@ input {
 .rangedark {
   &::-webkit-slider-runnable-track {
     @include track();
-    background: #758590;
+    background: $dark-1;
   }
 }

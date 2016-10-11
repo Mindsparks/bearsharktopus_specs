@@ -11,14 +11,14 @@
 }
 
 .checkbox.on {
-  background-color: #52A0DE;
+  background-color: $blue-light;
   color: white;
 }
 
 .checkbox.off {
- box-shadow: inset 0 0 0 2px #D8D8D8;
+ box-shadow: inset 0 0 0 2px $light-2;
 }
 
 .checkbox.off.dark {
- background-color: rgba(255,255,255,.2);
+ background-color: $dark-1;
 }

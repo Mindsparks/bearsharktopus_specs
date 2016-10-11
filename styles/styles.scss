@@ -1,17 +1,13 @@
 //Variables
 @import "variables/colors";
 @import "variables/fonts";
+@import "variables/icons";
 
 //Mixins
 @import "mixins/mixins";
 
 //Components
 @import "components/breadcrumb";
-@import "components/builder-button";
-@import "components/builder-canvas";
-@import "components/builder-component";
-@import "components/builder-sidebar";
-@import "components/builder-toolbar";
 @import "components/button";
 @import "components/checkbox";
 @import "components/colorpicker";
@@ -19,28 +15,29 @@
 @import "components/error";
 @import "components/filter";
 @import "components/formfield";
+@import "components/header";
 @import "components/launchpad";
 @import "components/modal";
 @import "components/module";
 @import "components/publish";
 @import "components/radio";
 @import "components/range";
+@import "components/search";
+@import "components/sidebar";
 @import "components/table";
 @import "components/toggle";
 @import "components/tooltip";
 @import "components/uploader";
 
-//Features
-@import "features/header";
-@import "features/sidebar";
-
-//Styles
-@import "styles/colors";
-@import "styles/fonts";
-@import "styles/icons";
+//Builder
+@import "builder/builder-button";
+@import "builder/builder-canvas";
+@import "builder/builder-component";
+@import "builder/builder-sidebar";
+@import "builder/builder-toolbar";
 
 //Layout
 @import "layout/layout";
 
-//Pages
-@import "pages/index";
+//Base styles, used only for the UI kit structure
+@import "base/index";
