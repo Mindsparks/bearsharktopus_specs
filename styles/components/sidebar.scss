@@ -8,8 +8,11 @@
   box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, .4);
   padding-top: 15px;
   display: inline-block;
-  .button {
-    margin: 0px 0px 11px 13px;
+  .sidebar-button{
+    margin: 0px 14px 10px 14px;
+    &:last-child {
+      margin-top: 10px;
+    }
   }
   .nav-item {
     z-index: 1000;

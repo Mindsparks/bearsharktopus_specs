@@ -1,8 +1,12 @@
-.button {
+button {
   height: 40px;
   width: 127px;
   border-radius: 4px;
   background-color: black;
+  border-width: 0px;
+  padding: 0px;
+  text-align: left;
+  font-size: .8125rem;
   .button-icon {
     float: left;
     color: white;
@@ -27,7 +31,7 @@
   }
 }
 
-.button-blue {
+button.button-blue {
   background-color: $blue;
   transition: background-color .2s ease;
   &:hover {
@@ -36,7 +40,7 @@
   }
 }
 
-.button-green {
+button.button-green {
   background-color: $green;
   transition: background-color .2s ease;
   .button-text {

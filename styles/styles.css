@@ -564,14 +564,18 @@ p.font-dark {
   color: #C1C1C1;
 }
 
-.button {
+button {
   height: 40px;
   width: 127px;
   border-radius: 4px;
   background-color: black;
+  border-width: 0px;
+  padding: 0px;
+  text-align: left;
+  font-size: .8125rem;
 }
 
-.button .button-icon {
+button .button-icon {
   float: left;
   color: white;
   font-size: 1.1rem;
@@ -579,7 +583,7 @@ p.font-dark {
   margin-left: 12px;
 }
 
-.button .button-text {
+button .button-text {
   color: white;
   text-transform: uppercase;
   font-family: "ProximaNova";
@@ -590,38 +594,38 @@ p.font-dark {
 }
 
 @media only screen and (max-width: 768px) {
-  .button .button-text {
+  button .button-text {
     display: none;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .button {
+  button {
     width: 42px;
   }
 }
 
-.button-blue {
+button.button-blue {
   background-color: #1B8CE4;
   transition: background-color .2s ease;
 }
 
-.button-blue:hover {
+button.button-blue:hover {
   background-color: #2970AA;
   cursor: pointer;
 }
 
-.button-green {
+button.button-green {
   background-color: #0FB162;
   transition: background-color .2s ease;
 }
 
-.button-green .button-text {
+button.button-green .button-text {
   letter-spacing: .1875rem;
   font-size: 1.1rem;
 }
 
-.button-green:hover {
+button.button-green:hover {
   background-color: #1F9B50;
   cursor: pointer;
 }
@@ -1586,8 +1590,12 @@ input {
   display: inline-block;
 }
 
-.sidebar .button {
-  margin: 0px 0px 11px 13px;
+.sidebar .sidebar-button {
+  margin: 0px 14px 10px 14px;
+}
+
+.sidebar .sidebar-button:last-child {
+  margin-top: 10px;
 }
 
 .sidebar .nav-item {
@@ -2022,26 +2030,26 @@ table .td-settings:hover p.td-setting-name {
   color: #879DAC;
 }
 
-.builder-button-save {
+.builder-button {
+  width: 37px;
   height: 37px;
   border-radius: 37px;
   background-color: #E3E3E3;
-  width: 37px;
   border: 2px solid #4F4F4F;
   cursor: pointer;
 }
 
-.builder-button-save .icon-floppy-disk {
+.builder-button .builder-button-icon {
   font-size: 1.1rem;
   text-align: center;
   line-height: 33px;
 }
 
-.builder-button-save:hover {
+.builder-button:hover {
   background-color: #4F4F4F;
 }
 
-.builder-button-save:hover .icon-floppy-disk {
+.builder-button:hover .builder-button-icon {
   color: #F6F6F6;
 }
 

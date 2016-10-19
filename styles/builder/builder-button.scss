@@ -1,18 +1,18 @@
-.builder-button-save {
+.builder-button {
+  width: 37px;
   height: 37px;
   border-radius: 37px;
   background-color: $grey-1;
-  width: 37px;
   border: 2px solid $grey-3;
   cursor: pointer;
-  .icon-floppy-disk {
+  .builder-button-icon {
      font-size: 1.1rem;
      text-align: center;
      line-height: 33px;
    }
    &:hover {
      background-color: $grey-3;
-     .icon-floppy-disk {
+     .builder-button-icon {
        color: $grey-0;
      }
    }
