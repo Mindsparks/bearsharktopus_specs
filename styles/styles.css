@@ -2043,6 +2043,7 @@ table .td-settings:hover p.td-setting-name {
   font-size: 1.1rem;
   text-align: center;
   line-height: 33px;
+  color: #4F4F4F;
 }
 
 .builder-button:hover {
@@ -2051,6 +2052,16 @@ table .td-settings:hover p.td-setting-name {
 
 .builder-button:hover .builder-button-icon {
   color: #F6F6F6;
+}
+
+.builder-button.inactive {
+  background-color: #FFF;
+  border-color: #A1A1A1;
+  cursor: default;
+}
+
+.builder-button.inactive .builder-button-icon {
+  color: #A1A1A1;
 }
 
 .base-background {

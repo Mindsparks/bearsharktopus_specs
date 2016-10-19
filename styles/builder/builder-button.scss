@@ -6,9 +6,10 @@
   border: 2px solid $grey-3;
   cursor: pointer;
   .builder-button-icon {
-     font-size: 1.1rem;
-     text-align: center;
-     line-height: 33px;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 33px;
+    color: $grey-3;
    }
    &:hover {
      background-color: $grey-3;
@@ -16,4 +17,13 @@
        color: $grey-0;
      }
    }
+}
+
+.builder-button.inactive {
+  background-color: #FFF;
+  border-color: $grey-2;
+  cursor: default;
+  .builder-button-icon {
+    color: $grey-2;
+  }
 }
