@@ -3,6 +3,25 @@
   width: 127px;
   border-radius: 4px;
   background-color: black;
+  .button-icon {
+    float: left;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 40px;
+    margin-left: 12px;
+  }
+  .button-text {
+    color: white;
+    text-transform: uppercase;
+    font-family: "ProximaNova";
+    letter-spacing: .093rem;
+    font-weight: 500;
+    line-height: 42px;
+    padding-left: 40px;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
   @media only screen and (max-width: 768px) {
     width: 42px;
   }
@@ -11,13 +30,6 @@
 .button-blue {
   background-color: $blue;
   transition: background-color .2s ease;
-  .icon-file-upload2 {
-    float: left;
-    color: white;
-    font-size: 1.1rem;
-    line-height: 40px;
-    margin-left: 10px;
-  }
   &:hover {
     background-color: $blue-dark;
     cursor: pointer;
@@ -27,45 +39,12 @@
 .button-green {
   background-color: $green;
   transition: background-color .2s ease;
-  .icon-plus3 {
-    float: left;
-    color: white;
-    font-size: 1.1rem;
-    line-height: 40px;
-    text-align: center;
-    margin-left: 11px;
-  }
   .button-text {
-    letter-spacing: 3px;
+    letter-spacing: .1875rem;
     font-size: 1.1rem;
   }
   &:hover {
     background-color: $green-dark;
     cursor: pointer;
-  }
-}
-
-.button-icon {
-  color: white;
-  font-size: 30px;
-  position: relative;
-  top: -1px;
-  left: 11px;
-  float: left;
-  @media only screen and (max-width: 768px) {
-    padding: 1px;
-  }
-}
-
-.button-text {
-  color: white;
-  text-transform: uppercase;
-  font-family: "ProximaNova";
-  letter-spacing: 1.5px;
-  font-weight: 500;
-  line-height: 42px;
-  padding-left: 40px;
-  @media only screen and (max-width: 768px) {
-    display: none;
   }
 }

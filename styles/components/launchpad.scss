@@ -9,13 +9,13 @@
     .launchpad-nav-type {
       text-align: center;
       .launchpad-nav-type-icon {
-        font-size: 28px;
+        font-size: 1.75rem;
         color: $dark-2;
       }
       p.launchpad-nav-type-text {
         position: relative;
         text-align: center;
-        font-size: 12px;
+        font-size: .75rem;
         color: $dark-2;
         font-weight: 300;
         line-height: 28px;
@@ -44,7 +44,7 @@
         display: inline-block;
         color: $dark-2;
         line-height: 60px;
-        font-size: 42px;
+        font-size: 2.625rem;
       }
       .launchpad-type-selection-info {
         display: inline-block;
@@ -57,13 +57,13 @@
           padding: 0px 0px 5px 0px;
           font-weight: 100;
           font-family: "Gotham";
-          font-size: 11px;
+          font-size: .6875rem;
         }
         p.launchpad-type-selection-desc {
           font-weight: 100;
           color: $dark-2;
           line-height: 1.1rem;
-          font-size: 11px;
+          font-size: .6875rem;
         }
       }
       &:hover {
@@ -95,6 +95,7 @@
         font-style: "Gotham";
         font-size: 17px;
         color: $dark-2;
+        padding-bottom: 6px;
       }
       &:last-child {
         margin-top: 16px;
@@ -117,7 +118,8 @@
           text-align: center;
           font-family: "Gotham";
           font-weight: 300;
-          font-size: 11px;
+          font-size: .6875rem;
+          display: block;
           color: $dark-2;
         }
         &:hover {
@@ -150,10 +152,11 @@
       p.launchpad-layout-text {
         font-family: "Gotham";
         font-weight: 300;
-        font-size: 12px;
+        font-size: .75rem;
         text-align: center;
         color: $dark-2;
         padding-top: 8px;
+        display: block;
       }
       &:hover {
         cursor: pointer;

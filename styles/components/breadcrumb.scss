@@ -1,15 +1,16 @@
 .breadcrumb {
   padding-bottom: 10px;
+  cursor: pointer;
   .icon-arrow-left3.small {
     float: left;
-    font-size: 12px;
+    font-size: .75rem;
     margin-right: 5px;
     color: #C1C1C1;
   }
   .breadcrumb-text {
     float: left;
     font-family: "Gotham";
-    font-size: 13px;
+    font-size: .8125rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .2rem;

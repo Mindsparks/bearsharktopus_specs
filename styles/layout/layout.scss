@@ -1,19 +1,68 @@
+.content {
+  padding: 85px 0px 0px 200px;
+  background-color: $light-0;
+  height: 100%;
+  width: 100%;
+  white-space : nowrap; /* this does the trick */
+          overflow : hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 85px 0px 0px 92px;
+  }
+}
+
 /* Column of a layout */
 .section {
   width: 325px;
-  margin-right: 39px;
+  margin-right: 19px;
   margin-bottom: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section-right {
+  min-width: 100px;
+  max-width: 1200px;
+  margin-bottom: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Section divider */
+.section-divider {
+  width: 1px;
+  height: 100%;
+  background-color: #E6E6E6;
+  display: inline-block;
+  margin-right: 19px;
+  vertical-align: top;
 }
 
 /* Area of a section that is specific to a set of related componenets */
 .block {
   width: 100%;
   margin-bottom: 24px;
+  display: block;
+  white-space: normal; /* this does the trick */
+}
 
+/* Section divider */
+.block-divider {
+  height: 1px;
+  width: 140px;
+  background-color: #E6E6E6;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: top;
+  margin-top: 8px;
 }
 
 /* Individually isolated components */
 .fragment {
   width: 100%;
   margin-bottom: 11px;
+  display: block;
+  white-space: normal; /* this does the trick */
 }

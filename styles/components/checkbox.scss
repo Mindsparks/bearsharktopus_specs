@@ -6,7 +6,10 @@
    left: 2px;
    top: 2px;
    color: white;
-   font-size: 12px;
+   font-size: .75rem;
+ }
+ &:hover {
+   cursor: pointer;
  }
 }
 
@@ -17,8 +20,26 @@
 
 .checkbox.off {
  box-shadow: inset 0 0 0 2px $light-2;
+ .icon-checkmark {
+   display: none;
+   color: $light-2;
+ }
+ &:hover {
+   .icon-checkmark {
+     display: block;
+   }
+ }
 }
 
 .checkbox.off.dark {
  background-color: $dark-1;
+ .icon-checkmark {
+  display: none;
+  color: $dark-3;
+ }
+ &:hover {
+   .icon-checkmark {
+     display: block;
+   }
+ }
 }

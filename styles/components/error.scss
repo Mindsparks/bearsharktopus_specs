@@ -1,14 +1,24 @@
 .error {
-  p.error-text {
-    display: inline-block;
-    color: $red;
-    font-family: "Gotham";
-    text-transform: uppercase;
-    font-size: 12px;
-  }
   .icon-warning2 {
     display: inline-block;
     color: $red;
-    font-size: 12px;
+    font-size: .75rem;
   }
+  p.error-text {
+    display: inline-block;
+    font-family: "Gotham";
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+    color: $red;
+  }
+  #error-text {
+    display: inline-block;
+    font-family: "Gotham";
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+    color: $red;
+  }
+
 }

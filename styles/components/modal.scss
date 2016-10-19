@@ -32,20 +32,22 @@
     .icon-cross2 {
       float: right;
       display: inline-block;
-      font-size: 20px;
+      font-size: 1.25rem;
       color: $light-3;
       line-height: 50px;
       padding: 0px 12px;
     }
     .icon-cross2.modal-title-x {
       position: relative;
-      top: -60px;
+      top: -50px;
     }
     p.modal-title {
-      font-size: 14px;
+      display: block;
+      font-size: .875rem;
       color: $light-3;
       line-height: 50px;
-      text-align: center;
+      position: relative;
+      left: 38%;
     }
   }
   .modal-resize {

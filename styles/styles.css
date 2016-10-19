@@ -161,96 +161,60 @@
   font-weight: 700;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-  font-family: "ProximaNova";
-  margin: 10px 10px 5px 0px;
-  text-transform: uppercase;
+h1, h2, h3, h4, p {
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
+  font-family: "Gotham";
+  font-size: 2rem;
   font-weight: 200;
-  letter-spacing: .4rem;
   color: #4D4D4D;
-  font-size: 1.375rem;
+  letter-spacing: .2rem;
 }
 
-h1.light {
-  color: #EAF2FA;
+h1.font-dark {
+  color: #DDE6EC;
 }
 
 h2 {
+  display: inline-block;
+  font-family: "ProximaNova";
+  font-size: 1rem;
   font-weight: 200;
-  letter-spacing: .1rem;
   color: #797979;
-  font-size: 1.125rem;
+  letter-spacing: .1rem;
 }
 
-h2.light {
-  color: #BECAD5;
+h2.font-dark {
+  color: #DDE6EC;
 }
 
 h3 {
+  font-family: "ProximaNova";
+  font-size: .75rem;
   font-weight: 500;
-  letter-spacing: .1rem;
   color: #7B7B7B;
-  font-size: .875rem;
-}
-
-h3.light {
-  color: #BECAD5;
-}
-
-h4 {
-  font-weight: 400;
   letter-spacing: .1rem;
-  color: #959595;
-  font-size: .875rem;
 }
 
-h4.light {
-  color: #BECAD5;
+h3.font-dark {
+  color: #DDE6EC;
 }
 
-p.proxima-nova {
-  font-weight: 400;
-  color: #717171;
-  letter-spacing: .1rem;
-  line-height: 1.2rem;
+p {
+  display: inline-block;
+  font-family: "Gotham";
   font-size: .8125rem;
-}
-
-p.light {
-  color: #BECAD5;
-}
-
-h1.gotham {
-  font-family: "Gotham";
-  opacity: .6;
-  font-size: 1.375rem;
-}
-
-h2.gotham {
-  font-family: "Gotham";
-  font-size: 1.125rem;
-}
-
-h3.gotham {
-  font-family: "Gotham";
-  font-size: .875rem;
-}
-
-h4.gotham {
-  font-family: "Gotham";
-  font-size: .875rem;
-}
-
-p.gotham {
-  font-family: "Gotham";
-  line-height: 1.4rem;
   font-weight: 200;
-  font-size: .8125rem;
+  color: #717171;
+  line-height: 1.2rem;
+  letter-spacing: .05rem;
+}
+
+p.font-dark {
+  color: #DDE6EC;
 }
 
 @font-face {
@@ -580,11 +544,12 @@ p.gotham {
 
 .breadcrumb {
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .breadcrumb .icon-arrow-left3.small {
   float: left;
-  font-size: 12px;
+  font-size: .75rem;
   margin-right: 5px;
   color: #C1C1C1;
 }
@@ -592,7 +557,7 @@ p.gotham {
 .breadcrumb .breadcrumb-text {
   float: left;
   font-family: "Gotham";
-  font-size: 13px;
+  font-size: .8125rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: .2rem;
@@ -606,6 +571,30 @@ p.gotham {
   background-color: black;
 }
 
+.button .button-icon {
+  float: left;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 40px;
+  margin-left: 12px;
+}
+
+.button .button-text {
+  color: white;
+  text-transform: uppercase;
+  font-family: "ProximaNova";
+  letter-spacing: .093rem;
+  font-weight: 500;
+  line-height: 42px;
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .button .button-text {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .button {
     width: 42px;
@@ -615,14 +604,6 @@ p.gotham {
 .button-blue {
   background-color: #1B8CE4;
   transition: background-color .2s ease;
-}
-
-.button-blue .icon-file-upload2 {
-  float: left;
-  color: white;
-  font-size: 1.1rem;
-  line-height: 40px;
-  margin-left: 10px;
 }
 
 .button-blue:hover {
@@ -635,54 +616,14 @@ p.gotham {
   transition: background-color .2s ease;
 }
 
-.button-green .icon-plus3 {
-  float: left;
-  color: white;
-  font-size: 1.1rem;
-  line-height: 40px;
-  text-align: center;
-  margin-left: 11px;
-}
-
 .button-green .button-text {
-  letter-spacing: 3px;
+  letter-spacing: .1875rem;
   font-size: 1.1rem;
 }
 
 .button-green:hover {
   background-color: #1F9B50;
   cursor: pointer;
-}
-
-.button-icon {
-  color: white;
-  font-size: 30px;
-  position: relative;
-  top: -1px;
-  left: 11px;
-  float: left;
-}
-
-@media only screen and (max-width: 768px) {
-  .button-icon {
-    padding: 1px;
-  }
-}
-
-.button-text {
-  color: white;
-  text-transform: uppercase;
-  font-family: "ProximaNova";
-  letter-spacing: 1.5px;
-  font-weight: 500;
-  line-height: 42px;
-  padding-left: 40px;
-}
-
-@media only screen and (max-width: 768px) {
-  .button-text {
-    display: none;
-  }
 }
 
 .checkbox {
@@ -695,7 +636,11 @@ p.gotham {
   left: 2px;
   top: 2px;
   color: white;
-  font-size: 12px;
+  font-size: .75rem;
+}
+
+.checkbox:hover {
+  cursor: pointer;
 }
 
 .checkbox.on {
@@ -707,8 +652,26 @@ p.gotham {
   box-shadow: inset 0 0 0 2px #D9DFE4;
 }
 
+.checkbox.off .icon-checkmark {
+  display: none;
+  color: #D9DFE4;
+}
+
+.checkbox.off:hover .icon-checkmark {
+  display: block;
+}
+
 .checkbox.off.dark {
   background-color: #40494E;
+}
+
+.checkbox.off.dark .icon-checkmark {
+  display: none;
+  color: #879DAC;
+}
+
+.checkbox.off.dark:hover .icon-checkmark {
+  display: block;
 }
 
 .colorpicker {
@@ -762,7 +725,7 @@ p.gotham {
 
 .dropdown .option .icon-arrow-down5 {
   color: #646C73;
-  font-size: 20px;
+  font-size: 1.25rem;
   float: right;
   line-height: 33px;
   padding: 0px 8px;
@@ -826,18 +789,28 @@ p.gotham {
   background-color: #40494E;
 }
 
-.error p.error-text {
-  display: inline-block;
-  color: #E65E5E;
-  font-family: "Gotham";
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
 .error .icon-warning2 {
   display: inline-block;
   color: #E65E5E;
-  font-size: 12px;
+  font-size: .75rem;
+}
+
+.error p.error-text {
+  display: inline-block;
+  font-family: "Gotham";
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 500;
+  color: #E65E5E;
+}
+
+.error #error-text {
+  display: inline-block;
+  font-family: "Gotham";
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 500;
+  color: #E65E5E;
 }
 
 .filter {
@@ -853,6 +826,7 @@ p.gotham {
   padding-left: 10px;
   color: #9CA2A6;
   padding: 0px 0px 0px 10px;
+  font-weight: 700;
 }
 
 .filter p.filter-selected {
@@ -860,11 +834,12 @@ p.gotham {
   display: inline-block;
   line-height: 25px;
   color: #656B70;
+  font-weight: 700;
 }
 
 .filter .icon-arrow-down3 {
   display: inline-block;
-  font-size: 10px;
+  font-size: .625rem;
   padding-right: 10px;
 }
 
@@ -880,6 +855,8 @@ p.gotham {
 .filter .filter-options p {
   padding: 8px 10px 5px 10px;
   color: #91A3B2;
+  display: block;
+  font-weight: 700;
 }
 
 .filter .filter-options p:hover {
@@ -918,7 +895,7 @@ p.gotham {
   font-family: "ProximaNova";
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: .875rem;
   letter-spacing: .3px;
 }
 
@@ -1008,7 +985,7 @@ p.gotham {
   color: #6C6C6C;
   font-family: "Gotham";
   font-weight: 400;
-  font-size: 13px;
+  font-size: .8125rem;
   letter-spacing: .05rem;
   padding-left: 10px;
   text-transform: uppercase;
@@ -1031,14 +1008,14 @@ p.gotham {
 }
 
 .launchpad .launchpad-nav .launchpad-nav-type .launchpad-nav-type-icon {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #6C7D87;
 }
 
 .launchpad .launchpad-nav .launchpad-nav-type p.launchpad-nav-type-text {
   position: relative;
   text-align: center;
-  font-size: 12px;
+  font-size: .75rem;
   color: #6C7D87;
   font-weight: 300;
   line-height: 28px;
@@ -1073,7 +1050,7 @@ p.gotham {
   display: inline-block;
   color: #6C7D87;
   line-height: 60px;
-  font-size: 42px;
+  font-size: 2.625rem;
 }
 
 .launchpad .launchpad-type .launchpad-type-selection .launchpad-type-selection-info {
@@ -1089,14 +1066,14 @@ p.gotham {
   padding: 0px 0px 5px 0px;
   font-weight: 100;
   font-family: "Gotham";
-  font-size: 11px;
+  font-size: .6875rem;
 }
 
 .launchpad .launchpad-type .launchpad-type-selection .launchpad-type-selection-info p.launchpad-type-selection-desc {
   font-weight: 100;
   color: #6C7D87;
   line-height: 1.1rem;
-  font-size: 11px;
+  font-size: .6875rem;
 }
 
 .launchpad .launchpad-type .launchpad-type-selection:hover {
@@ -1129,6 +1106,7 @@ p.gotham {
   font-style: "Gotham";
   font-size: 17px;
   color: #6C7D87;
+  padding-bottom: 6px;
 }
 
 .launchpad .launchpad-theme .launchpad-theme-section:last-child {
@@ -1158,7 +1136,8 @@ p.gotham {
   text-align: center;
   font-family: "Gotham";
   font-weight: 300;
-  font-size: 11px;
+  font-size: .6875rem;
+  display: block;
   color: #6C7D87;
 }
 
@@ -1197,10 +1176,11 @@ p.gotham {
 .launchpad .launchpad-layout .launchpad-layout-selection p.launchpad-layout-text {
   font-family: "Gotham";
   font-weight: 300;
-  font-size: 12px;
+  font-size: .75rem;
   text-align: center;
   color: #6C7D87;
   padding-top: 8px;
+  display: block;
 }
 
 .launchpad .launchpad-layout .launchpad-layout-selection:hover {
@@ -1263,7 +1243,7 @@ p.gotham {
 .modal .modal-navbar .icon-cross2 {
   float: right;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #BECAD5;
   line-height: 50px;
   padding: 0px 12px;
@@ -1271,14 +1251,16 @@ p.gotham {
 
 .modal .modal-navbar .icon-cross2.modal-title-x {
   position: relative;
-  top: -60px;
+  top: -50px;
 }
 
 .modal .modal-navbar p.modal-title {
-  font-size: 14px;
+  display: block;
+  font-size: .875rem;
   color: #BECAD5;
   line-height: 50px;
-  text-align: center;
+  position: relative;
+  left: 38%;
 }
 
 .modal .modal-resize {
@@ -1308,19 +1290,19 @@ p.gotham {
 }
 
 .module .module-sort .icon-arrow-up8 {
-  font-size: 14px;
+  font-size: .875rem;
   color: #646C73;
   cursor: pointer;
 }
 
 .module .module-sort .icon-arrow-down8 {
-  font-size: 14px;
+  font-size: .875rem;
   color: #BECAD5;
   cursor: pointer;
 }
 
 .module .icon-cross2 {
-  font-size: 12px;
+  font-size: .75rem;
   color: #BECAD5;
   float: right;
   cursor: pointer;
@@ -1388,13 +1370,13 @@ p.gotham {
   transition: -webkit-transform 1s ease;
 }
 
-.publish-active p.publish-active {
+.publish-active #publish-active {
   color: #6C500B;
   font-family: "Gotham";
   font-size: .75rem;
   font-weight: 400;
   letter-spacing: .1rem;
-  line-height: 37px;
+  line-height: 39px;
   margin-right: 18px;
 }
 
@@ -1418,6 +1400,7 @@ p.gotham {
 }
 
 .radio {
+  display: inline-block;
   width: 16px;
   height: 16px;
   border-radius: 16px;
@@ -1568,7 +1551,7 @@ input {
 .search .icon-search3 {
   color: #BECAD5;
   float: right;
-  font-size: 38px;
+  font-size: 2.375rem;
 }
 
 .search .search-field {
@@ -1583,9 +1566,10 @@ input {
 .search .search-field p.search-field-text {
   line-height: 42px;
   text-align: center;
+  display: block;
   color: #BECAD5;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Gotham";
   letter-spacing: .2rem;
 }
@@ -1599,19 +1583,15 @@ input {
   top: 56px;
   box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.4);
   padding-top: 15px;
+  display: inline-block;
 }
 
 .sidebar .button {
   margin: 0px 0px 11px 13px;
 }
 
-@media only screen and (max-width: 768px) {
-  .sidebar .button {
-    margin: 0px 0px 11px 7px;
-  }
-}
-
 .sidebar .nav-item {
+  z-index: 1000;
   width: 100%;
   height: 50px;
   padding-left: 16px;
@@ -1623,36 +1603,8 @@ input {
   vertical-align: middle;
 }
 
-.sidebar .nav-item .nav-icon .icon-pencil {
-  font-size: 24px;
-  line-height: 50px;
-  display: inline;
-  color: #D7D7D7;
-}
-
-.sidebar .nav-item .nav-icon .icon-stats-bars {
-  font-size: 24px;
-  line-height: 50px;
-  display: inline;
-  color: #D7D7D7;
-}
-
-.sidebar .nav-item .nav-icon .icon-display {
-  font-size: 24px;
-  line-height: 50px;
-  display: inline;
-  color: #D7D7D7;
-}
-
-.sidebar .nav-item .nav-icon .icon-cogs {
-  font-size: 24px;
-  line-height: 50px;
-  display: inline;
-  color: #D7D7D7;
-}
-
-.sidebar .nav-item .nav-icon .icon-question4 {
-  font-size: 24px;
+.sidebar .nav-item .nav-icon .nav-icon-style {
+  font-size: 1.5rem;
   line-height: 50px;
   display: inline;
   color: #D7D7D7;
@@ -1663,7 +1615,7 @@ input {
   top: 1.2px;
   font-family: "Gotham";
   padding-left: 12px;
-  font-size: 10px;
+  font-size: .625rem;
   font-weight: 400;
   letter-spacing: .17rem;
   display: inline;
@@ -1687,7 +1639,7 @@ input {
   color: #A8AEB4;
   font-family: "Gotham";
   font-weight: 700;
-  font-size: 12px;
+  font-size: .75rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
   padding: 14px 15px 14px 15px;
@@ -1698,20 +1650,13 @@ input {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-  .sidebar .nav-item-list {
-    position: absolute;
-    padding-left: 10px;
-    left: 56px;
-    top: 120px;
-    min-width: 170px;
-  }
-}
-
 .sidebar .sidebar-footer {
+  z-index: 1;
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
+  padding-bottom: 10px;
   width: 156px;
+  background-color: rgba(54, 64, 73, 0.9);
 }
 
 .sidebar .sidebar-footer .nav-item {
@@ -1723,12 +1668,15 @@ input {
 }
 
 .sidebar .sidebar-footer .nav-item .nav-icon .icon-question4 {
-  color: #6B7A88;
+  color: #6C7D87;
+  font-size: 1.5rem;
+  line-height: 50px;
+  display: inline;
 }
 
 .sidebar .sidebar-footer .nav-item .nav-text {
   height: 46px;
-  color: #6B7A88;
+  color: #6C7D87;
 }
 
 .sidebar .sidebar-footer .nav-item:hover {
@@ -1736,22 +1684,22 @@ input {
 }
 
 .sidebar .sidebar-footer .nav-item:hover .nav-icon .icon-question4 {
-  color: #A8AEB4;
+  color: #879DAC;
 }
 
 .sidebar .sidebar-footer .nav-item:hover .nav-text {
-  color: #A8AEB4;
+  color: #879DAC;
 }
 
 .sidebar .sidebar-footer .sidebar-footer-link {
-  font-size: 10px;
-  color: #6B7A88;
+  font-size: .625rem;
+  color: #6C7D87;
   padding-left: 16px;
   padding-bottom: 5px;
 }
 
 .sidebar .sidebar-footer .sidebar-footer-link:hover {
-  color: #A8AEB4;
+  color: #879DAC;
   cursor: pointer;
 }
 
@@ -1759,7 +1707,29 @@ input {
   .sidebar {
     width: 58px;
   }
+  .sidebar .button {
+    margin: 0px 0px 11px 7px;
+  }
   .sidebar .nav-item .nav-text {
+    display: none;
+  }
+  .sidebar .nav-item-list {
+    position: absolute;
+    padding-left: 10px;
+    left: 56px;
+    top: 120px;
+    min-width: 170px;
+  }
+  .sidebar .sidebar-footer {
+    width: 58px;
+  }
+  .sidebar .sidebar-footer .nav-item .nav-icon {
+    height: 40px;
+  }
+  .sidebar .sidebar-footer .nav-item .nav-text {
+    display: none;
+  }
+  .sidebar .sidebar-footer .sidebar-footer-link {
     display: none;
   }
 }
@@ -1780,7 +1750,7 @@ table th p, table td p, table tr p {
   padding: 0px;
   font-family: "Gotham";
   font-weight: 300;
-  font-size: 13px;
+  font-size: .8125rem;
   color: #3A3A3A;
 }
 
@@ -1797,7 +1767,7 @@ table th p {
 
 table th .icon-arrow-down3 {
   float: left;
-  font-size: 13px;
+  font-size: .8125rem;
   display: inline-block;
   line-height: 29px;
   padding-left: 5px;
@@ -1824,14 +1794,14 @@ table td p.app-name {
 }
 
 table td .icon-compass6 {
-  font-size: 32px;
+  font-size: 2rem;
   position: relative;
   line-height: 68px;
   text-align: center;
 }
 
 table td .icon-calculator {
-  font-size: 34px;
+  font-size: 2.125rem;
   position: relative;
   line-height: 68px;
   text-align: center;
@@ -1842,13 +1812,13 @@ table .td-type {
 }
 
 table .td-detail {
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 300;
   padding-left: 8px;
 }
 
 table .td-status {
-  font-size: 13px;
+  font-size: .8125rem;
   font-weight: 500;
   padding-left: 8px;
   color: #1B8CE4;
@@ -1864,7 +1834,7 @@ table .td-settings p.app-name {
 
 table .td-settings .icon-eye {
   display: none;
-  font-size: 15px;
+  font-size: .9375rem;
   padding-left: 8px;
   padding-top: 0px;
   position: relative;
@@ -1874,7 +1844,7 @@ table .td-settings .icon-eye {
 
 table .td-settings p.td-setting-name {
   display: none;
-  font-size: 11px;
+  font-size: .6875rem;
   font-weight: 500;
   padding: 0px;
   position: relative;
@@ -1979,7 +1949,7 @@ table .td-settings:hover p.td-setting-name {
   color: white;
   line-height: 31px;
   font-family: "Gotham";
-  font-size: 13px;
+  font-size: .8125rem;
   padding: 0px 10px;
 }
 
@@ -2006,18 +1976,19 @@ table .td-settings:hover p.td-setting-name {
 
 .uploader .uploader-buttons .uploader-button {
   display: block;
+  cursor: pointer;
 }
 
 .uploader .uploader-buttons .uploader-button .icon-upload {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #BECAD5;
   margin-bottom: 8px;
 }
 
 .uploader .uploader-buttons .uploader-button .icon-bin2 {
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #BECAD5;
   margin-bottom: 10px;
 }
@@ -2129,15 +2100,15 @@ table .td-settings:hover p.td-setting-name {
 }
 
 .builder-component .builder-component-settings .builder-component-icon .icon-cog {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .builder-component .builder-component-settings .builder-component-icon .icon-copy4 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .builder-component .builder-component-settings .builder-component-icon .icon-bin2 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .builder-component .builder-component-content {
@@ -2156,7 +2127,7 @@ table .td-settings:hover p.td-setting-name {
 }
 
 .builder-component .builder-component-rotate .icon-redo {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .builder-sidebar {
@@ -2177,7 +2148,7 @@ table .td-settings:hover p.td-setting-name {
   padding-left: 18px;
   display: inline-block;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #DDE6EC;
 }
@@ -2187,7 +2158,7 @@ table .td-settings:hover p.td-setting-name {
   display: inline-block;
   color: white;
   font-size: 18px;
-  line-height: 34px;
+  line-height: 2.125rem;
   color: #DDE6EC;
 }
 
@@ -2195,14 +2166,14 @@ table .td-settings:hover p.td-setting-name {
   padding-left: 18px;
   display: inline-block;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 34px;
   color: #DDE6EC;
 }
 
 .builder-sidebar .builder-nav p.builder-nav-item {
   padding-left: 7px;
-  font-size: 15px;
+  font-size: .9375rem;
   color: white;
   font-weight: 300;
   display: inline-block;
@@ -2218,7 +2189,7 @@ table .td-settings:hover p.td-setting-name {
   padding-right: 10px;
   display: inline-block;
   color: #74889C;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 34px;
 }
 
@@ -2231,7 +2202,7 @@ table .td-settings:hover p.td-setting-name {
 }
 
 .builder-sidebar .builder-page .icon-brain {
-  font-size: 45px;
+  font-size: 2.75rem;
   text-align: center;
   line-height: 95px;
   color: #879DAC;
@@ -2243,6 +2214,7 @@ table .td-settings:hover p.td-setting-name {
   font-weight: 300;
   letter-spacing: .1rem;
   padding: 0px;
+  display: block;
 }
 
 .builder-toolbar .builder-toolbar-item {
@@ -2253,38 +2225,96 @@ table .td-settings:hover p.td-setting-name {
 
 .builder-toolbar .builder-toolbar-item .builder-toolbar-icon {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #A1A1A1;
 }
 
 .builder-toolbar .builder-toolbar-item p.builder-toolbar-item-name {
   text-align: center;
   color: #A1A1A1;
-  font-size: 13px;
+  font-size: .8125rem;
   font-family: "ProximaNova";
   font-weight: 500;
   position: relative;
   top: 10px;
   letter-spacing: .05rem;
+  display: block;
+}
+
+.builder-toolbar .builder-toolbar-item.wide {
+  width: 88px;
+}
+
+.content {
+  padding: 85px 0px 0px 200px;
+  background-color: #F8F9FB;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  /* this does the trick */
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 85px 0px 0px 92px;
+  }
 }
 
 /* Column of a layout */
 .section {
   width: 325px;
-  margin-right: 39px;
+  margin-right: 19px;
   margin-bottom: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section-right {
+  min-width: 100px;
+  max-width: 1200px;
+  margin-bottom: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Section divider */
+.section-divider {
+  width: 1px;
+  height: 100%;
+  background-color: #E6E6E6;
+  display: inline-block;
+  margin-right: 19px;
+  vertical-align: top;
 }
 
 /* Area of a section that is specific to a set of related componenets */
 .block {
   width: 100%;
   margin-bottom: 24px;
+  display: block;
+  white-space: normal;
+  /* this does the trick */
+}
+
+/* Section divider */
+.block-divider {
+  height: 1px;
+  width: 140px;
+  background-color: #E6E6E6;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: top;
+  margin-top: 8px;
 }
 
 /* Individually isolated components */
 .fragment {
   width: 100%;
   margin-bottom: 11px;
+  display: block;
+  white-space: normal;
+  /* this does the trick */
 }
 
 /* ----------------------------------------------- */
@@ -2308,16 +2338,6 @@ html, body, p {
   font-family: sans-serif;
 }
 
-p {
-  font-family: "ProximaNova";
-  font-size: 14px;
-  color: #7B7B7B;
-  letter-spacing: 1px;
-  font-weight: 500;
-  padding-bottom: 10px;
-}
-
-/* BASE COLORS */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -2363,22 +2383,13 @@ p {
   z-index: 2;
 }
 
-.area-dark {
+.area.dark {
   background-color: #252B31;
-  margin: 30px 0px;
-  padding: 20px;
-  border-radius: 6px;
   box-shadow: 2px 2px 0px 2px #666;
-  position: relative;
-  z-index: 1;
 }
 
-.area-dark p {
+.area.dark p {
   color: #DDD;
-}
-
-.area-dark:hover {
-  z-index: 2;
 }
 
 .toc {
@@ -2386,12 +2397,13 @@ p {
   display: inline-block;
 }
 
-.toc h1 {
-  margin-top: 20px;
-  display: block;
-  color: #c8c8c8;
-  text-decoration: none;
-  font-size: 24px;
+.toc p.toc-header {
+  font-family: "ProximaNova";
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  font-weight: 300;
+  color: #E3E3E3;
+  padding: 20px 0px 6px;
 }
 
 .toc a.toc-link {
@@ -2418,18 +2430,4 @@ p {
   bottom: 20px;
   padding: 10px 10px 10px 30px;
   z-index: 100000;
-}
-
-/* Move to content.scss */
-.content {
-  padding: 85px 0px 0px 200px;
-  background-color: #F8F9FB;
-  height: 100%;
-  width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-  .content {
-    padding: 85px 0px 0px 92px;
-  }
 }

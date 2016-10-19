@@ -5,18 +5,22 @@
     height: 55px;
     .builder-toolbar-icon {
       text-align: center;
-      font-size: 24px;
+      font-size: 1.5rem;
       color: $grey-2;
     }
     p.builder-toolbar-item-name {
       text-align: center;
       color: $grey-2;
-      font-size: 13px;
+      font-size: .8125rem;
       font-family: "ProximaNova";
       font-weight: 500;
       position: relative;
       top: 10px;
       letter-spacing: .05rem;
+      display: block;
     }
+  }
+  .builder-toolbar-item.wide {
+    width: 88px;
   }
 }
